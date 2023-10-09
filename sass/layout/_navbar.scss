@@ -1,0 +1,21 @@
+.navBar {
+    color: #D9D9D9;
+
+    &__link {
+        display: flex;
+        flex-direction: row;
+        color: #D9D9D9;
+    }
+
+    &__link li {
+        padding: 50px 25px;
+
+    }
+
+    &__link li:last-child{
+        padding: 40px 20px;
+
+    }
+}
+
+

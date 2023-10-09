@@ -1,0 +1,70 @@
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__left {
+        display:flex;
+        align-items: flex-start;
+        row-gap: 25px;
+        flex-direction: column;
+        color: white;
+        margin-left: 400px;
+        min-width: 300px;
+        margin-top: 200px;
+
+
+        &__hello {
+        font-family: Poppins;
+        font-size: 40px;
+        color: #D9D9D9;
+        font-weight: 400;
+
+        }
+
+        &__presentation {
+            font-size: 60px;
+            color: #D9D9D9;
+            font-weight: 400;
+
+            &--color {
+                color: #11ADFF;
+            } 
+
+            &__pronoun {
+                font-size: 50px;
+            }
+        }
+
+        &__description {
+            font-size: 18px;
+            color: #D9D9D9;
+            font-weight: 500;
+            
+        }
+
+        &__link {
+            margin-top: 30px;
+        }
+
+        &__link:first-child {
+            border: 1px solid #11ADFF;
+            border-radius: 1px;
+            padding: 15px 20px;
+            margin-right: 30px;
+            color: #11ADFF;
+        }
+
+}
+
+    &__right {
+        display: flex;
+        align-items: flex-end;
+        row-gap: 25px;
+        flex-direction: column;
+        color: white;
+        margin-left: 400px;
+        max-width: 300px;
+        margin-top: 200px;
+    }
+}

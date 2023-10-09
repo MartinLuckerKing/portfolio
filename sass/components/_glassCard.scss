@@ -1,0 +1,59 @@
+.card {
+    position: relative;
+    width: 370px;
+    height: 200px;
+    margin: 30px;
+    border-radius:1px;
+    background: rgba(255, 255, 255, 0.07);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
+
+
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+
+        &__round {
+            width: 85px;
+            height: 85px;
+            background-color: lightblue;
+            border-radius: 50%;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+
+        }
+
+    }
+
+  }
+
+.placeholder {
+    position: absolute;
+    z-index: 0;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    top: 400px;
+    left: 1400px;
+    right: 0;
+    bottom: 0;
+    background-color: blue;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3)
+}
+

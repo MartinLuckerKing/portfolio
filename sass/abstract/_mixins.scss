@@ -1,0 +1,6 @@
+@mixin buttonFull($padding-y: 10px, $padding-x: 30px) {
+    background-color: #11ADFF;
+    padding: $padding-y $padding-x;
+    border-radius: 1px;
+  }
+

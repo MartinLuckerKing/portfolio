@@ -1,0 +1,12 @@
+.button {
+
+  &__contact {
+    @include buttonFull(14px, 30px)
+  }
+
+  &__hireMe {
+    color: white;
+    @include buttonFull(15px, 41.5px)
+    
+  }
+}
