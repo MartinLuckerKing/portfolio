@@ -1,0 +1,45 @@
+.recentProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include blackGlass();
+
+    &__title {
+        color: white;
+        margin-top: 60px;
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        margin-bottom: 75px;
+        padding-top: 180px;
+    }
+
+    &__container {
+        position: relative;
+        @include blackGlass();
+    }
+
+    &__titleProject {
+        text-align: left;
+        margin: 0px 120px 30px 120px;
+        font-size: 28px;
+        font-weight: 600;
+        color: $primary-color;
+    }
+
+    &__img {
+        margin: 100px 0;
+        max-width: 300px;
+        max-height: 500px;
+    }
+
+    &__text {
+        text-align: left;
+        color: white;
+        margin: 0 120px 50px 120px;
+        letter-spacing: 1.5px;
+        line-height: 28px;
+        font-weight: 300;
+    }
+}

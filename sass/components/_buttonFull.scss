@@ -9,4 +9,12 @@
     @include buttonFull(15px, 41.5px)
     
   }
+
+  &__visitWebsite {
+    margin-left: 120px;
+    color: white;
+    max-width: 120px;
+    margin-bottom: 90px;
+    @include buttonFull(18px, 30px)
+  }
 }

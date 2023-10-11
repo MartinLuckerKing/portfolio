@@ -1,13 +1,25 @@
-.borderLeft {
+.border {
+
+  &__top {
+    position: absolute;
+    width: 490px;
+    height: 6px;
+    background: linear-gradient(300deg, rgba(194, 205, 212, 0) 0%, rgb(114 153 169 / 79%) 53%, rgb(0, 212, 255) 100%);
+    top: -15px;
+    left: 60px;
+    z-index: 1;
+  }
+
+  &__left {
     position: absolute;
     width: 6px;
-    height: 600px;
+    height: 490px;
     background: linear-gradient(300deg, rgba(194, 205, 212, 0) 0%, rgb(114 153 169 / 79%) 53%, rgb(0, 212, 255) 100%);
     left: 60px;
-    top: 20px;
+    top: -10px;
     right: 0;
     z-index: 1;
-
+  }
 }
 
 .borderContainer {
@@ -15,15 +27,6 @@
   padding-top: 6px; // Pour créer de l'espace pour le .borderTop
 }
 
-.borderTop {
-  position: absolute;
-  width: 600px;
-  height: 6px;
-  background: linear-gradient(300deg, rgba(194, 205, 212, 0) 0%, rgb(114 153 169 / 79%) 53%, rgb(0, 212, 255) 100%);
-  top: 18px;
-  left: 60px;
-  z-index: 1;
-}
 
 .border-container {
     width: 150px;
@@ -38,24 +41,79 @@
     border-style: dashed;
   }
   
-  .border {
-    display:inline-block;
-    height: 200px;
-    width: 200px;
-    margin: 20px;
-    border-radius:50%;
-    border: 5px dashed $background-primary;
-    background:
-     linear-gradient($background-primary 0 0) padding-box,
-     linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(17,173,240,0.7931547619047619) 58%, rgba(0,212,255,1) 100%);
+  
 
-     &__alt {
-        border: 2px dashed #fff;
-     }
+  .borderProject {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2vmin;
+
+    &__top {
+      position: absolute;
+      width: 600px;
+      height: 6px;
+      background: linear-gradient(300deg, rgba(194, 205, 212, 0) 0%, rgb(114 153 169 / 79%) 53%, rgb(0, 212, 255) 100%);
+      top: -6px;
+      left: -6px;
+      z-index: 1;
+    }
+
+    &__left {
+      position: absolute;
+      width: 6px;
+      height: 600px;
+      background: linear-gradient(300deg, rgba(194, 205, 212, 0) 0%, rgb(114 153 169 / 79%) 53%, rgb(0, 212, 255) 100%);
+      left: -6px;
+      top: -6px;
+      right: 0;
+      z-index: 1;
+    }
+
+    &__right {
+      transform: rotate(180deg);
+      position: absolute;
+      width: 6px;
+      height: 600px;
+      background: linear-gradient(300deg, rgba(194, 205, 212, 0) 0%, rgb(114 153 169 / 79%) 53%, rgb(0, 212, 255) 100%);
+      bottom: -6px;
+      right: -6px;
+      z-index: 1;
+    }
+
+    &__bottom {
+      transform: rotate(180deg);
+      position: absolute;
+      width: 600px;
+      height: 6px;
+      background: linear-gradient(300deg, rgba(194, 205, 212, 0) 0%, rgb(114 153 169 / 79%) 53%, rgb(0, 212, 255) 100%);
+      bottom: -6px;
+      right: -6px;
+      z-index: 1;
+    }
+    &__01 {
+      margin: 0 100px;
+      position: relative;
+      border: solid $bw transparent;
+      padding: 1em;
+
+    }
+  
+  .borderProject__01:before {
+    
+    position: absolute;
+    top: -$bw; right: -$bw; bottom: -$bw; left: -$bw;
+    padding: $bw;
+    background: linear-gradient(45deg, $primary-color, $primary-color, white, white);
+    --sl: red 26%, transparent 0%, transparent 80%, red 0%;
+    --m: 
+      linear-gradient(red, red) content-box, 
+      linear-gradient(red, red) content-box, 
+      linear-gradient(90deg, var(--sl)) 0 0/ 13px 13px round,
+      linear-gradient(var(--sl)) 0 0/ 13px 13px round;
+    -webkit-mask: var(--m);
+    -webkit-mask-composite: xor, source-over, source-in, source-over;
+            mask: var(--m);
+            mask-composite: exclude, add, intersect, add;
+    content: ''
   }
-  .border03 {
-    height: 4px;
-    background-image: linear-gradient(90deg, transparent, transparent 50%, $background-primary 0%, $background-primary 100%), linear-gradient(90deg, #69d2e7, #a7dbd8, #e0e4cc, #f38630, #fa6900);
-    background-size: 20px 3px, 100% 3px;
-    border: none;
-  }
+} 
