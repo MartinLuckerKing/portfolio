@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script defer src="./slider.js"></script>
+    <script defer src="https://kit.fontawesome.com/7dedfb4a80.js" crossorigin="anonymous"></script>
   </head>
   <body class="background">
     <div class="container">
@@ -28,7 +30,6 @@
           </span>
         </div>
         <div class="banner__right">
-          <div class="placeholder"></div>
           <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
             <div class="card__content">
               <div class="card__content__round">
@@ -96,8 +97,14 @@
                 <div class="borderProject__left"></div>
                 <div class="borderProject__right"></div>
                 <div class="borderProject__bottom"></div>
-
-                <img class="recentProject__img" src="./img/booki/accueil-desktop.PNG" alt="">
+                <div class="slider">
+                  
+                  <div class="slide" id="slide1"><img src="./img/booki/accueil-desktop.PNG" alt="Image 1"></div>
+                  <div class="slide" id="slide2"><img src="./img/booki/accueil-desktop.PNG" alt="Image 2"></div>
+                  <div class="slide" id="slide3"><img src="./img/booki/accueil-desktop.PNG" alt="Image 3"></div>
+                  <button class="prev">❮</button>
+                  <button class="next">❯</button>
+              </div>              
                 <h3 class="recentProject__titleProject">Booki </h3>
                 <p class="recentProject__text">Passionné par la conception web et doté d'une solide formation en développement front-end, je suis un développeur front-end junior dédié à la création d'expériences utilisateur fluides et esthétiquement agréables. Mon parcours m'a permis d'acquérir des compétences essentielles en HTML, CSS et JavaScript, et je suis continuellement à la recherche des dernières tendances pour rester à jour dans cet univers technologique en évolution rapide.
                   Mes projets témoignent de mon sens du détail, de ma capacité à travailler en équipe et de mon engagement à produire un travail de qualité qui répond aux besoins des utilisateurs tout en respectant les contraintes techniques et esthétiques.</p>
@@ -107,8 +114,57 @@
 
           </div>
         </section>
+        <section>
+          <div class="mySkills">
+            <h2>My Skills</h2>
+          </div>
+        </section>
+        <section>
+          <div class="contact">
+            <div class="contact__content">
+              <h2>Let's Talk!</h2>
+              <p>i'd love to hear from you.</p>
+              <div class="contact__content__letter">
+                <div class="contact__content__letter__square">
+                  <div class="contact__content__letter__rodLeft"></div>
+                  <div class="contact__content__letter__rodRight"></div>
+                </div>
+              </div>
+            </div>
+            <div class="contact__content__form">
+              <form
+                action="https://formspree.io/f/mvojdrey"
+                method="POST"
+              >
+              <div class="contact__content__form__inline">
+              <label>
+                FIRST NAME
+                <input type="text" name="firstName" placeholder="Enter your name">
+              </label>
+              <label>
+                LAST NAME
+                <input type="text" name="lastName" placeholder="Enter your last name">
+              </label>
+              <label>
+                PHONE NUMBER
+                <input type="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+              </label>
+              <label>
+                YOUR EMAIL
+                <input type="email" name="email" placeholder="johndoe@gmail.com">
+              </label>
+            </div>
+              <label>
+                MESSAGE
+                <textarea name="message"></textarea>
+              </label>
+                <button type="submit">Send</button>
+              
+              </form>
+            </div>
+          </div>
+        </section>
     </div>
-  </div>
     <script type="text/javascript" src="/node_modules/vanilla-tilt/dist/vanilla-tilt.min.js"></script>
   </body>
 </html>

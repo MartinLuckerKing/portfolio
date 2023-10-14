@@ -3,10 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 140px;
     @include blackGlass();
 
     &__title {
-        color: white;
+        color: $white-text;
         margin-top: 60px;
         font-size: 36px;
         font-weight: 600;
@@ -36,7 +37,7 @@
 
     &__text {
         text-align: left;
-        color: white;
+        color: $white-text;
         margin: 0 120px 50px 120px;
         letter-spacing: 1.5px;
         line-height: 28px;

@@ -1,0 +1,21 @@
+.mySkills {
+    margin-top: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include blackGlass();
+
+    h2 {
+        margin-top: 100px;
+        margin-bottom: 150px;
+        font-size: 40px;
+        color: $primary-color;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+
+}    
+
+

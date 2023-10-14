@@ -18,7 +18,7 @@
         }
 
         &__specializing {
-            color: white;
+            color: $white-text;
             margin-top: 60px;
             font-size: 40px;
             font-weight: 700;
@@ -44,7 +44,7 @@
     background-color: lightblue;
 
     &__title {
-        color: white;
+        color: $white-text;
         margin-top: 30px;
         font-size: 24px;
         font-weight: 400;
@@ -54,7 +54,7 @@
         margin-top: 30px;
         font-weight: 200;
         font-size: 16px;
-        color: white;
+        color: $white-text;
         max-width: 350px;
         letter-spacing: 0.5px;
         

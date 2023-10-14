@@ -1,0 +1,122 @@
+.contact {
+    margin-top: 250px;
+    @include blackGlass();
+
+
+    &__content {
+        margin-left: 100px;
+        text-align: left;
+        
+    h2 {
+        margin-top: 100px;
+        font-size: 70px;
+        color: $primary-color;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    p {
+        margin-top: 20px;
+        font-weight: 300;
+        color: $white-text;
+        letter-spacing: 1.8px;
+    }
+
+    &__letter {
+        position: relative;
+        margin-top: 180px;
+        margin-bottom: 150px;
+        z-index: 2;
+        background-color: rgb(39 52 64 / 48%);
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+
+        &__square {
+            position: absolute;
+            transform: rotate(160deg);
+            border-radius: 15px;
+            top: 110px;
+            right: 0;
+            left: 93px;
+            bottom: 0;
+            background-color: #11ADFF;
+            width: 160px;
+            height: 120px;
+        }
+
+        &__rodLeft {
+            position: absolute;
+            transform: rotate(207deg);
+            border-radius: 15px;
+            top: 70px;
+            right: 0;
+            left: 69px;
+            bottom: 0;
+            background-color: rgb(39, 52, 64);
+            width: 80px;
+            height: 13px;
+        }
+
+        &__rodRight {
+            position: absolute;
+            transform: rotate(150deg);
+            border-radius: 15px;
+            top: 70px;
+            left: 8px;
+            bottom: 0;
+            background-color: rgb(39, 52, 64);
+            width: 80px;
+            height: 13px;
+        
+        }
+    }
+
+    &__form {
+        margin-top: 100px;
+        margin-left: 100px;
+        background-color: #232C34;
+        max-width: 800px;
+        height: 700px;
+
+        &__inline {
+            margin: 50px;
+            text-align: left;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 70px;
+            grid-row-gap: 100px;
+        }
+
+        label {
+            font-weight: 300;
+            color: $white-text;
+            font-size: 21px;
+            letter-spacing: 1px;
+        }
+
+        input {
+            margin-top: 25px;
+            max-width: 300px;
+            border: none;
+            background-color: transparent;
+            font-size: 30px;
+            color: $white-text;
+            border-bottom: 1px #245372 solid; 
+        }
+
+        ::placeholder {
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #595959;
+        }
+
+        input:focus {
+            outline: none;
+            border-bottom: 1px $primary-color solid;
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
+}
