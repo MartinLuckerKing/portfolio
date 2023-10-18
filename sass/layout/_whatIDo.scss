@@ -10,6 +10,11 @@
         flex-direction: row;
         gap: 100px;
 
+        @include breakpoint('large') {
+            flex-direction: column;
+        }
+    
+
         &__container {
             display: flex;
             flex-direction: column;

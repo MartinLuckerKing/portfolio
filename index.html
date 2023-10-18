@@ -8,17 +8,23 @@
     <script defer src="https://kit.fontawesome.com/7dedfb4a80.js" crossorigin="anonymous"></script>
   </head>
   <body class="background">
-    <div class="container">
+    
       <nav class="navBar">
         <div class="header">
-          <div class="header__logo">Logo</div>
-          <ul class="navBar__link">
-            <li>Home</li>
-            <li>About me</li>
-            <li>My Work</li>
-            <li><p class="button__contact"> Contact</p></li>
-          </ul>
+          <div class="header__container">
+          <div class="header__container__logo">Logo
+            <p>FRONT
+               DEVELOPPER</p> 
+          </div>
         </div>
+
+      </div>
+      <ul class="navBar__link">
+        <li>Home</li>
+        <li>About me</li>
+        <li>My Work</li>
+        <li><p class="button__contact"> Contact</p></li>
+    </ul>
       </nav>
       <div class="banner">
         <div class="banner__left">
@@ -42,7 +48,7 @@
           </div>
       </div>
     </div>
-    <section>
+    <div class="container">
         <div class="aboutMe">
           <p class="aboutMe__sideText">DevFrontEnd</p>
           <div class="aboutMe__container">
@@ -50,7 +56,7 @@
         <div class="borderContainer">
           <div class="border__left"></div>
           <div class="border__top"></div>
-          <div class="blackGlass aboutMe__content">
+          <div class="aboutMe__content">
             <h2>About Me</h2>
             <p>Passionné par la conception web et doté d'une solide formation en développement front-end, je suis un développeur front-end junior dédié à la création d'expériences utilisateur fluides et esthétiquement agréables. Mon parcours m'a permis d'acquérir des compétences essentielles en HTML, CSS et JavaScript, et je suis continuellement à la recherche des dernières tendances pour rester à jour dans cet univers technologique en évolution rapide.
               Mes projets témoignent de mon sens du détail, de ma capacité à travailler en équipe et de mon engagement à produire un travail de qualité qui répond aux besoins des utilisateurs tout en respectant les contraintes techniques et esthétiques.
@@ -102,8 +108,7 @@
                   <div class="slide" id="slide1"><img src="./img/booki/accueil-desktop.PNG" alt="Image 1"></div>
                   <div class="slide" id="slide2"><img src="./img/booki/accueil-desktop.PNG" alt="Image 2"></div>
                   <div class="slide" id="slide3"><img src="./img/booki/accueil-desktop.PNG" alt="Image 3"></div>
-                  <button class="prev">❮</button>
-                  <button class="next">❯</button>
+                  <button class="next"><span class="triangle-blanc"></span></button>
               </div>              
                 <h3 class="recentProject__titleProject">Booki </h3>
                 <p class="recentProject__text">Passionné par la conception web et doté d'une solide formation en développement front-end, je suis un développeur front-end junior dédié à la création d'expériences utilisateur fluides et esthétiquement agréables. Mon parcours m'a permis d'acquérir des compétences essentielles en HTML, CSS et JavaScript, et je suis continuellement à la recherche des dernières tendances pour rester à jour dans cet univers technologique en évolution rapide.
@@ -111,12 +116,25 @@
                   <div class="button__visitWebsite">Visit Website</div>
               </div>
             </div>
-
           </div>
         </section>
         <section>
           <div class="mySkills">
             <h2>My Skills</h2>
+            <div class="mySkills__content">
+              <div>
+                <i class="fa-brands fa-react"></i>
+                <p>React</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-python"></i>
+                <p>Pyhton</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-square-js"></i>
+                <p>Javascript</p>
+              </div>
+            </div>
           </div>
         </section>
         <section>
@@ -154,17 +172,43 @@
                 <input type="email" name="email" placeholder="johndoe@gmail.com">
               </label>
             </div>
+            <div class="contact__content__form__message">
+              <div>
               <label>
                 MESSAGE
-                <textarea name="message"></textarea>
+                <div> <textarea name="message" placeholder="Enter your message"></textarea> </div>
               </label>
-                <button type="submit">Send</button>
-              
+              </div>
+                <button class="button__send" type="submit">SUBMIT</button>
+              </div>
               </form>
             </div>
           </div>
-        </section>
-    </div>
+        </div>
+      </section>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__content__left">
+        <p class="footer__content__left__logo">Logo</p>
+        <p class="footer__content__left__followMe">Follow Me</p>
+        <i class="fa-brands fa-linkedin footer__content__left__icon"></i>
+      </div>
+        <div class="footer__content__menu">
+
+          <div>
+            <h3>Home</h3>
+            <p>Hire Me</p>
+            <p>About Me</p>
+            <p>My Work</p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p><a href="mailto:martin.duchesne27@gmail.com">martin.duchesne27@gmail.com</a></p>
+            <p>Linkedin</p>
+          </div>  
+        </div>
+
+  </footer>
     <script type="text/javascript" src="/node_modules/vanilla-tilt/dist/vanilla-tilt.min.js"></script>
   </body>
 </html>

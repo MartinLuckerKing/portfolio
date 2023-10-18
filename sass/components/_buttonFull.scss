@@ -17,4 +17,15 @@
     margin-bottom: 90px;
     @include buttonFull(18px, 30px)
   }
+
+  &__send {
+    border: none;
+    margin: 20px 50px 0 50px;
+    color: $white-text;
+    letter-spacing: 1px;
+    font-size: 21px;
+    font-weight: 600;
+    @include buttonFull(18px, 30px)
+
+  }
 }

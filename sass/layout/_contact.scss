@@ -1,11 +1,21 @@
 .contact {
     margin-top: 250px;
+    margin-bottom: 700px;
     @include blackGlass();
+
+    @include breakpoint('large') {
+        flex-direction: column;
+    }
 
 
     &__content {
         margin-left: 100px;
         text-align: left;
+
+        @include breakpoint('large') {
+            margin-left: 0;
+            text-align: center;
+        }
         
     h2 {
         margin-top: 100px;
@@ -31,6 +41,12 @@
         width: 350px;
         height: 350px;
         border-radius: 50%;
+
+        @include breakpoint('large') {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
 
         &__square {
             position: absolute;
@@ -73,27 +89,29 @@
     }
 
     &__form {
-        margin-top: 100px;
-        margin-left: 100px;
+
+        margin: 100px;
         background-color: #232C34;
-        max-width: 800px;
-        height: 700px;
+
 
         &__inline {
             margin: 50px;
             text-align: left;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 70px;
-            grid-row-gap: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 70px 80px;
+
+            @include breakpoint('xlarge') {
+                gap: 70px 20px;
+            }
         }
 
+
+
         label {
-            font-weight: 300;
+            flex: 1 1 150px;
+            max-width: 250px;
             color: $white-text;
-            font-size: 21px;
-            letter-spacing: 1px;
         }
 
         input {
@@ -101,9 +119,23 @@
             max-width: 300px;
             border: none;
             background-color: transparent;
-            font-size: 30px;
+            font-size: 16px;
+            line-height: 24px;
             color: $white-text;
             border-bottom: 1px #245372 solid; 
+        }
+        
+        textarea {
+            box-sizing: border-box;
+            margin: 25px 50px 50px 50px;
+            width: 75%;
+            max-width: 552px;
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            color: #DDDDDD;
+            border-bottom: 1px #245372 solid;
+            max-height: 100px;
         }
 
         ::placeholder {
@@ -111,11 +143,29 @@
             letter-spacing: 1px;
             color: #595959;
         }
+        
 
         input:focus {
             outline: none;
             border-bottom: 1px $primary-color solid;
             transition: 0.2s ease-in-out;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-bottom: 1px $primary-color solid;
+            transition: 0.2s ease-in-out;
+        }
+
+        &__message {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            flex-wrap: nowrap;
+
+            label {
+                margin-left: 50px;
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 .banner {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
 
     &__left {
@@ -9,9 +10,13 @@
         row-gap: 25px;
         flex-direction: column;
         color: $white-text;
-        margin-left: 400px;
+        margin-left: 20%;
         min-width: 300px;
         margin-top: 200px;
+
+        @include breakpoint('xlarge') {
+            margin-left: 0%;
+        }
 
 
         &__hello {
@@ -63,8 +68,16 @@
         row-gap: 25px;
         flex-direction: column;
         color: $white-text;
-        margin-left: 400px;
+        margin-left: 20%;
+        margin-right: 60px;
         max-width: 300px;
         margin-top: 200px;
+
+        @include breakpoint('xlarge') {
+            margin-right: 0;
+        }
+
     }
+
+    
 }

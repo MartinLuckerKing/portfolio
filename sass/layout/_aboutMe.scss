@@ -4,7 +4,7 @@
 .aboutMe {
     display: flex;
     justify-content: center;
-    margin-top: 400px;
+    margin-top: 800px;
     font-family: Poppins;
     font-weight: 300;
     position: relative;
@@ -22,7 +22,11 @@
         color: transparent;
         text-orientation: use-glyph-orientation;
         transform: rotate(180deg);
-        -webkit-text-stroke: 3px $primary-color;  /* Adaptez la valeur selon l'épaisseur souhaitée */
+        -webkit-text-stroke: 3px $primary-color;
+
+        @include breakpoint('large') {
+            display: none;
+        }
 
     }
 
@@ -32,6 +36,11 @@
         align-items: flex-start;
         padding: 120px 100px;
         justify-content: center;
+        @include blackGlass($padding-left-x: 0);
+
+        @include breakpoint('large') {
+            @include blackGlass($padding-left-x: 30px);
+        }
         
 
 

@@ -15,6 +15,24 @@
         letter-spacing: 1px;
     }
 
+    &__content {
+        display: flex;
+        flex-direction: row;
+        column-gap: 50px;
+        margin-bottom: 150px;
+
+        i {
+            color: $primary-color;
+            font-size: 50px;
+        }
+
+        p {
+            color: $white-text;
+            margin-top: 12px;
+
+        }
+    }
+
 
 }    
 

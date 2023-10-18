@@ -1,0 +1,95 @@
+.footer {
+    z-index: 2;
+    min-height: 300px;
+    background-color: rgb(8, 15, 18, 1);
+    -webkit-box-shadow: 0px -112px 200px 133px rgba(8, 15, 18,0.75);
+    -moz-box-shadow: 0px -112px 200px 133px rgba(8, 15, 18,0.75);
+    box-shadow: 0px -112px 200px 133px rgba(8, 15, 18,0.75);
+
+    &__content {
+        position: relative;
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #bfbfbf;
+
+        @include breakpoint('large') {
+            padding-top: 30px;
+        }
+
+        &__left {
+
+            position: absolute;
+            bottom: -70px;
+
+            @include breakpoint('large') {
+                position: relative;
+                margin-left: 20px;
+                bottom: 0;
+            }
+
+            &__logo {
+            
+                font-size: 40px;
+                color: $primary-color;
+                margin-bottom: 30px;
+            }
+    
+            &__followMe {
+                font-size: 26px;
+                font-weight: 300;
+            }
+    
+            &__icon {
+                margin-top: 20px;
+            }
+    
+        }
+
+
+        &__menu {
+            position: absolute;
+            bottom: -94px;
+            right: 0;
+            display: flex;
+            color: $white-text;
+            text-align: left;
+            flex-direction: row;
+            column-gap: 220px;
+
+            @include breakpoint('large') {
+                position: relative;
+                margin-right: 20px;
+                column-gap: 80px;
+                bottom: 0;
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: 25px;
+                letter-spacing: 1px;
+                margin-bottom: 46px;
+
+            }
+
+            p {
+
+                margin-bottom: 26px;
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+
+            a {
+                
+                color: $white-text;
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 1px;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,9 +1,41 @@
 .header {
     display: flex;
     justify-content: space-between;
-    
-    &__logo {
-        padding: 50px;
-    }
-}
+    position: relative;
 
+    &__container {
+        position: absolute;
+        width: 19%;
+        height: 1100px;
+        background: linear-gradient(360deg, rgb(14, 40, 62) 21%, rgb(13, 31, 46) 100%);
+
+
+        @include breakpoint('xlarge') {
+            width: 0;
+        }
+
+        
+        p {
+            margin-top: 100px;
+            background: linear-gradient(180deg, rgb(10 41 67) 36%, rgb(16 41 62) 100%);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            font-weight: 700;
+            font-size: 150px;
+            word-break: break-all;
+         }
+
+        &__logo {
+            margin-top: 32px;
+            z-index: 3;
+            font-size: 40px;
+            color: $primary-color;
+
+            @include breakpoint('xlarge') {
+                margin-left: 50px;
+            }
+
+        }
+    }   
+}

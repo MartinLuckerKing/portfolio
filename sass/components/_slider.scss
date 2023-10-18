@@ -31,23 +31,35 @@
     box-shadow: 0px 0px 70px 0px rgba(0,0,0,0.9);
 }
 
-
-.prev, .next {
+.next {
+    right: 35px;
+    z-index: 3;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
+    width: 50px;
+    transform: translate(-0%, -50%);
+    height: 50px;
     background-color: $primary-color;
+    opacity: 85%;
     border-radius: 50%;
     border: none;
-    padding: 10px;
     cursor: pointer;
 }
 
-.prev {
-    left: 0px;
+
+.triangle-blanc {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16px;
+    height: 17px;
+    background-color: white;
+    clip-path: polygon(90% 50%, 0% 0%, 0% 100%);
+
 }
 
-.next {
-    right: 0px;
-}
