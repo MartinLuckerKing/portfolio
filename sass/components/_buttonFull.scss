@@ -6,7 +6,17 @@
 
   &__hireMe {
     color: white;
-    @include buttonFull(15px, 41.5px)
+    @include buttonFull(15px, 41.5px);
+
+    @include breakpoint('small') {
+      min-width: 280px;
+
+  }
+
+  @include breakpoint('xxsmall') {
+    min-width: 198px;
+
+}
     
   }
 
@@ -15,7 +25,17 @@
     color: white;
     max-width: 120px;
     margin-bottom: 90px;
-    @include buttonFull(18px, 30px)
+    @include buttonFull(18px, 30px);
+
+    @include breakpoint('large') {
+      margin: 0 50px 30px 50px;
+
+  }
+
+  @include breakpoint('small') {
+    margin: 0 20px 50px 20px;
+
+}
   }
 
   &__send {

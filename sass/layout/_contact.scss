@@ -7,6 +7,10 @@
         flex-direction: column;
     }
 
+    @include breakpoint('small') {
+        margin-bottom: 700px;
+    }
+
 
     &__content {
         margin-left: 100px;
@@ -30,6 +34,11 @@
         font-weight: 300;
         color: $white-text;
         letter-spacing: 1.8px;
+
+        @include breakpoint('small') {
+            margin-bottom: 100px;
+        }
+
     }
 
     &__letter {
@@ -47,6 +56,12 @@
             margin-right: auto;
         }
 
+        @include breakpoint('small') {
+            display: none;
+        }
+
+        
+
 
         &__square {
             position: absolute;
@@ -59,6 +74,8 @@
             background-color: #11ADFF;
             width: 160px;
             height: 120px;
+
+            
         }
 
         &__rodLeft {
@@ -92,6 +109,11 @@
 
         margin: 100px;
         background-color: #232C34;
+
+        
+        @include breakpoint('small') {
+            margin: 10px;
+        }
 
 
         &__inline {

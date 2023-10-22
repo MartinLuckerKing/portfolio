@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <script defer src="./slider.js"></script>
     <script defer src="https://kit.fontawesome.com/7dedfb4a80.js" crossorigin="anonymous"></script>
+    <script defer src="./burger.js" crossorigin="anonymous"></script>
   </head>
   <body class="background">
     
@@ -17,9 +18,28 @@
                DEVELOPPER</p> 
           </div>
         </div>
+      </div>
 
+      <div class="header__nav">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list_item"><a class="nav__link" href="#">Home</a></li>
+            <li class="nav__list_item"><a class="nav__link" href="#">About me</a></li>
+            <li class="nav__list_item"><a class="nav__link" href="#">My Work</a></li>
+            <li class="nav__list_item"><a class="nav__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
       <ul class="navBar__link">
+        <div class="burgerMenu">
+          <div class="burgerMenu__button">
+            <div class="menu-btn">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
         <li>Home</li>
         <li>About me</li>
         <li>My Work</li>
@@ -72,21 +92,22 @@
         <p class="whatIDo__specializing">Specializing In</p>
         <div class="whatIDo__content">
           <div class="whatIDo__content__container">
-            <div class="placeholderCircle"></div>
+            <img class="placeholderCircle" src="./img/svg/react_icon.svg">
               <h3 class="placeholderCircle__title">Mobile Apps</h3>
               <p class="placeholderCircle__description">Landing pages, Wireframing, prototyping, 
                 Mobile app design, User flow
               </p>
             </div>
             <div class="whatIDo__content__container">
-              <div class="placeholderCircle"></div>
+              <div><img class="placeholderCircle" src="./img/svg/circletest2.svg">
+            </div>
                 <h3 class="placeholderCircle__title">Mobile Apps</h3>
                 <p class="placeholderCircle__description">Landing pages, Wireframing, prototyping, 
                   Mobile app design, User flow
                 </p>
               </div>
               <div class="whatIDo__content__container">
-                <div class="placeholderCircle"></div>
+                <img class="placeholderCircle" src="./img/svg/screen_icon.svg">
                   <h3 class="placeholderCircle__title">Mobile Apps</h3>
                   <p class="placeholderCircle__description">Landing pages, Wireframing, prototyping, 
                     Mobile app design, User flow

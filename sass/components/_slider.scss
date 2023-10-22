@@ -1,27 +1,45 @@
 .slider {
     perspective: 1200px;
     position: relative;
-    width: 600px;
+    max-width: 570px;
     height: 500px;
     margin: 0 auto;
-    overflow: hidden;
+    display: flex;
+
+    @include breakpoint('small') {
+        right: 0px;
+        height: 450px;
+    }
+
+    @include breakpoint('xsmall') {
+        right: 0px;
+        height: 350px;
+    }
+
+    @include breakpoint('xxsmall') {
+        right: 0px;
+        height: 300px;
+    }
+
+
+
+
 }
 
 .slide {
     position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 300px; 
-    transition: transform 1.5s, box-shadow 1.5s ease-out; 
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);  
+    top: 50%;  /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    width: 300px;
+    transition: transform 1.5s, box-shadow 1.5s ease-out;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%); /* Ajuster la position */
 }
 
 .slide img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
-
 }
 
 .slide.active {
@@ -32,18 +50,47 @@
 }
 
 .next {
-    right: 35px;
-    z-index: 3;
+    right: 11px;
+    z-index: 4;
     position: absolute;
     top: 50%;
-    width: 50px;
-    transform: translate(-0%, -50%);
+    right: 11px;
+    transform: translateY(-50%);
     height: 50px;
+    width: 50px;
     background-color: $primary-color;
     opacity: 85%;
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    transition: 1s ;
+
+    @include breakpoint('large') {
+        right: 55px;
+    }
+
+    @include breakpoint('medium') {
+        right: 52px;
+    }
+
+    @include breakpoint('small') {
+        right: 2px;
+        height: 40px;
+        width: 40px;
+    }
+
+    @include breakpoint('xsmall') {
+        right: -5px;
+        height: 35px;
+        width: 35px;
+    }
+    @include breakpoint('xxsmall') {
+        right: -13px;
+        height: 30px;
+        width: 30px;
+    }
+
+
 }
 
 
@@ -60,6 +107,27 @@
     height: 17px;
     background-color: white;
     clip-path: polygon(90% 50%, 0% 0%, 0% 100%);
+
+    @include breakpoint('small') {
+        right: 0px;
+        height: 13px;
+        width: 14px;
+        transform: translate(-45%, -50%);
+    }
+
+    @include breakpoint('xsmall') {
+        right: 0px;
+        height: 13px;
+        width: 14px;
+        transform: translate(-40%, -50%);
+    }
+
+    @include breakpoint('xxsmall') {
+        right: 0px;
+        height: 12px;
+        width: 13px;
+        transform: translate(-35%, -50%);
+    }
 
 }
 

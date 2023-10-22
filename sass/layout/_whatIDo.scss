@@ -41,12 +41,11 @@
     }
 
 .placeholderCircle {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    background-color: lightblue;
 
     &__title {
         color: $white-text;

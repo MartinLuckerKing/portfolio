@@ -7,7 +7,9 @@ $bw: 5px;
 $buttonFull__contact__padding: 10px 30px;
 
 $breakpoints: (
-  'small': 375px,
+  'xxsmall': 320px,
+  'xsmall': 375px,
+  'small': 425px,
   'medium': 768px,
   'large': 968px,
   'xlarge': 1280px
