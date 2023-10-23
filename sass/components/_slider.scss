@@ -28,12 +28,12 @@
 
 .slide {
     position: absolute;
-    top: 50%;  /* Centrer verticalement */
-    left: 50%; /* Centrer horizontalement */
+    top: 50%;
+    left: 50%;
     width: 300px;
     transition: transform 1.5s, box-shadow 1.5s ease-out;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    transform: translate(-50%, -50%); /* Ajuster la position */
+    transform: translate(-50%, -50%);
 }
 
 .slide img {
@@ -50,11 +50,10 @@
 }
 
 .next {
-    right: 11px;
     z-index: 4;
     position: absolute;
     top: 50%;
-    right: 11px;
+    right: 19px;
     transform: translateY(-50%);
     height: 50px;
     width: 50px;
@@ -66,11 +65,17 @@
     transition: 1s ;
 
     @include breakpoint('large') {
-        right: 55px;
+        right: 18px;
     }
 
     @include breakpoint('medium') {
         right: 52px;
+    }
+
+    @include breakpoint('small-intermediate') {
+        right: 27px;
+        height: 40px;
+        width: 40px;
     }
 
     @include breakpoint('small') {

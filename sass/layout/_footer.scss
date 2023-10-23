@@ -19,9 +19,13 @@
             padding-top: 30px;
         }
 
-        @include breakpoint('small') {
+        @include breakpoint('small-intermediate') {
             flex-direction: column;
             align-items: flex-start;
+            margin-left: 10px;
+        }
+
+        @include breakpoint('small') {
             margin-left: 10px;
         }
 
@@ -35,10 +39,13 @@
                 margin-left: 20px;
                 bottom: 0;
             }
+            
 
             @include breakpoint('small') {
                 margin-bottom: 25px;
             }
+
+            
 
             &__logo {
             
@@ -77,11 +84,11 @@
                 
             }
 
-            
-            @include breakpoint('small') {
+            @include breakpoint('small-intermediate') {
                 flex-direction: column;
                 margin-left: 10px;
             }
+
 
             h3 {
                 font-weight: 400;

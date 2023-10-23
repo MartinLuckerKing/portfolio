@@ -1,0 +1,29 @@
+{
+  "projects": [
+    {
+      "title": "Booki",
+      "text": "Passionné par la conception web et doté d'une solide formation en développement front-end, je suis un développeur front-end junior dédié à la création d'expériences utilisateur fluides et esthétiquement agréables. Mon parcours m'a permis d'acquérir des compétences essentielles en HTML, CSS et JavaScript, et je suis continuellement à la recherche des dernières tendances pour rester à jour dans cet univers technologique en évolution rapide. Mes projets témoignent de mon sens du détail, de ma capacité à travailler en équipe et de mon engagement à produire un travail de qualité qui répond aux besoins des utilisateurs tout en respectant les contraintes techniques et esthétiques.",
+      "visitWebsiteButtonClass": "button__visitWebsite",
+      "visitWebsiteButtonText": "Visit Website",
+      "slides": [
+        {"id": "slide1", "imgSrc": "./img/booki/accueil-desktop.PNG", "imgAlt": "Image 1"},
+        {"id": "slide2", "imgSrc": "./img/booki/accueil-desktop.PNG", "imgAlt": "Image 2"},
+        {"id": "slide3", "imgSrc": "./img/booki/accueil-desktop.PNG", "imgAlt": "Image 3"}
+      ]
+    },
+
+    {
+      "title": "Booki",
+      "text": "Passionné par la conception web et doté d'une solide formation en développement front-end, je suis un développeur front-end junior dédié à la création d'expériences utilisateur fluides et esthétiquement agréables. Mon parcours m'a permis d'acquérir des compétences essentielles en HTML, CSS et JavaScript, et je suis continuellement à la recherche des dernières tendances pour rester à jour dans cet univers technologique en évolution rapide. Mes projets témoignent de mon sens du détail, de ma capacité à travailler en équipe et de mon engagement à produire un travail de qualité qui répond aux besoins des utilisateurs tout en respectant les contraintes techniques et esthétiques.",
+      "visitWebsiteButtonClass": "button__visitWebsite",
+      "visitWebsiteButtonText": "Visit Website",
+      "slides": [
+        {"id": "slide1", "imgSrc": "./img/booki/accueil-desktop.PNG", "imgAlt": "Image 1"},
+        {"id": "slide2", "imgSrc": "./img/booki/accueil-desktop.PNG", "imgAlt": "Image 2"},
+        {"id": "slide3", "imgSrc": "./img/booki/accueil-desktop.PNG", "imgAlt": "Image 3"}
+      ]
+    }
+    
+  ]
+
+}

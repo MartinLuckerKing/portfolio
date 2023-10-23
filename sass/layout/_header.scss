@@ -35,7 +35,16 @@
             @include breakpoint('xlarge') {
                 margin-left: 50px;
             }
+            
+            
+            @include breakpoint('small') {
+                margin-left: 30px;
+            }
 
+
+            @include breakpoint('xsmall') {
+                margin-left: 20px;
+            }
         }
     }   
 }

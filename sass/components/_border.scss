@@ -9,12 +9,12 @@
     left: 60px;
     z-index: 1;
 
-    @include breakpoint('small') {
-      width: 290px;
-    }
+    @include breakpoint('small-intermediate') {
+      display: none;
+  }
 
     @include breakpoint('small') {
-      display: none;
+      width: 290px;
     }
 
   }
@@ -28,6 +28,10 @@
     top: -10px;
     right: 0;
     z-index: 1;
+
+    @include breakpoint('small-intermediate') {
+      display: none;
+  }
 
     @include breakpoint('small') {
       display: none;
@@ -112,7 +116,9 @@
     }
 
     &__01 {
-      margin: 0 100px;
+      margin-bottom: 270px;
+      margin-left: 100px;
+      margin-right: 100px;
       position: relative;
       border: solid $bw transparent;
       padding: 1em;
@@ -127,6 +133,10 @@
 
       }
     }
+
+  .borderProject__01:last-child {
+    margin-bottom: 180px;
+  }
   
   .borderProject__01:before {
     

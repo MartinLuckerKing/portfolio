@@ -7,6 +7,10 @@
         flex-direction: column;
     }
 
+    @include breakpoint('small-intermediate') {
+        padding-bottom: 20px;
+    }
+
     @include breakpoint('small') {
         margin-bottom: 700px;
     }
@@ -19,6 +23,10 @@
         @include breakpoint('large') {
             margin-left: 0;
             text-align: center;
+        }
+
+        @include breakpoint('small-intermediate') {
+            margin-bottom: 100px;
         }
         
     h2 {
@@ -56,9 +64,10 @@
             margin-right: auto;
         }
 
-        @include breakpoint('small') {
+        @include breakpoint('small-intermediate') {
             display: none;
         }
+
 
         
 
@@ -110,9 +119,10 @@
         margin: 100px;
         background-color: #232C34;
 
-        
-        @include breakpoint('small') {
+        @include breakpoint('small-intermediate') {
             margin: 10px;
+            
+
         }
 
 
@@ -184,6 +194,10 @@
             flex-direction: column;
             text-align: left;
             flex-wrap: nowrap;
+
+            @include breakpoint('small-intermediate') {
+                padding-bottom: 40px;
+            }
 
             label {
                 margin-left: 50px;

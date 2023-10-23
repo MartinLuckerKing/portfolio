@@ -8,15 +8,15 @@
         justify-content: flex-end;
 
         li {
-            @include breakpoint('small') {
+            @include breakpoint('medium') {
                 display: none;
             }
         }
 
         div {
-            @media screen and (min-width: 700px) {
-                display: none;
-              }
+            @include breakpoint('medium') {
+                display: block;
+            }
         }
     } 
 

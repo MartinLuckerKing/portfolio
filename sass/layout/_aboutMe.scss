@@ -3,12 +3,15 @@
 
 .aboutMe {
     display: flex;
-    justify-content: center;
     margin-top: 800px;
     font-family: Poppins;
     font-weight: 300;
     position: relative;
-    align-items: center;
+
+    @include breakpoint('medium') {
+        display: block;
+    }
+
 
     &__container {
         position: relative;
@@ -40,6 +43,10 @@
 
         @include breakpoint('large') {
             @include blackGlass($padding-left-x: 30px);
+        }
+
+        @include breakpoint('small-intermediate') {
+            padding: 120px 20px;
         }
         
         @include breakpoint('small') {
@@ -73,7 +80,10 @@
             font-weight: 600;
             margin-top: 45px;
             min-width: 280px;
-
+            
+            @include breakpoint('small-intermediate') {
+                min-width: 180px;
+            }
 
 
             @include breakpoint('small') {
