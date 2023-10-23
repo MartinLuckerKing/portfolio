@@ -22,11 +22,25 @@
 
     &__link li {
         padding: 50px 25px;
-
+        transition: 0.5s;
     }
 
     &__link li:last-child{
         padding: 40px 20px;
+        transition: 0.5s;
+
+    }
+
+    &__link li:hover {
+        color: $primary-color;
+        cursor: pointer;
+    }
+
+    &__link li:last-child:hover{
+        transition: 0.5s;
+        color: $white-text;
+        padding: 41px 24px;
+        font-size: 14px;
 
     }
 

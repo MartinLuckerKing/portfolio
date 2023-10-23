@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', function () {
         textElement.textContent = project.text;
         projectElement.appendChild(textElement);
 
-        const buttonElement = document.createElement('div');
+        const buttonElement = document.createElement('a');
         buttonElement.className = 'button__visitWebsite';
         buttonElement.textContent = 'Visit Website';
-        buttonElement.addEventListener('click', () => window.location.href = project.visitWebsiteLink);
+        buttonElement.href = project.visitWebsiteLink
         projectElement.appendChild(buttonElement);
 
         projectsContainer.appendChild(projectElement);

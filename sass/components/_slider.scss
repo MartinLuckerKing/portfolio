@@ -49,6 +49,21 @@
     box-shadow: 0px 0px 70px 0px rgba(0,0,0,0.9);
 }
 
+.activeNext {
+    animation: clic 1s;
+}
+
+@keyframes clic {
+    from {
+        height: 50px;
+        width: 50px;
+    }
+    to {
+        height: 30px;
+        width: 30px;
+    }
+  }
+  
 .next {
     z-index: 4;
     position: absolute;
@@ -62,7 +77,7 @@
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    transition: 1s ;
+
 
     @include breakpoint('large') {
         right: 18px;

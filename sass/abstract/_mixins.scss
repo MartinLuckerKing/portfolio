@@ -34,3 +34,10 @@
       @content;
     }
 }
+
+@mixin breakpointMin($name) {
+  $breakpoint-value: map-get($breakpoints, $name);
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+}

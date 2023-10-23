@@ -18,6 +18,10 @@
             margin-left: 0%;
         }
 
+        @include breakpoint('xxsmall') {
+            margin-left: 20px;
+        }
+
 
         &__hello {
         font-family: Poppins;
@@ -66,12 +70,31 @@
     
         }
 
+
         &__link:first-child {
             border: 1px solid #11ADFF;
             border-radius: 1px;
             padding: 15px 20px;
-            margin-right: 30px;
+            margin-right: 28px;
             color: #11ADFF;
+            transition: 0.5s;
+        
+            @media screen and (min-width: 426px) {
+                &:hover {
+                    border: 1px solid $white-text;
+                    color: $white-text;
+                    font-size: 15px;
+                    margin-top: 1px;
+                    margin-bottom: 1px;
+                    margin-left: 5.2px;
+                    margin-right: 29.57px;
+                    transition: 0.5s;
+                }
+            }
+
+            
+
+            
 
             @include breakpoint('small') {
                 margin-right: 0;
