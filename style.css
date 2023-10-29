@@ -940,7 +940,6 @@ table {
   font-size: 16px;
   color: #DDDDDD;
   border-bottom: 1px #245372 solid;
-  max-height: 100px;
 }
 .contact__content__form ::placeholder {
   font-size: 14px;
