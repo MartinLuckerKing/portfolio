@@ -16,7 +16,7 @@
   clip-path: inset(0 0 0 0);
 
   @include breakpoint('small') {
-    margin: 0 0px;
+    margin: 0px 0px;
   }
 
   @include breakpoint('xxsmall') {
@@ -25,7 +25,6 @@
   }
 
 }
-
 
 
 @mixin breakpoint($name) {

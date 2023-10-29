@@ -1,0 +1,19 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Duchesne",
+    "jobTitle": "Web Developper",
+    "url": "https://www.martinduchesne.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4 bis rue claude monet",
+      "addressLocality": "saint étienne sous bailleul",
+      "postalCode": "27920",
+      "addressCountry": "France"
+    },
+    "email": "martin.duchesne27@gmail.com",
+    "telephone": "0698950028",
+    "skill": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Python", "Django", "SASS", "Redux"],
+    "alumniOf": "Openclassroom",
+    "birthDate": "1995-05-15"
+  }

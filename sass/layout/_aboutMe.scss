@@ -3,10 +3,19 @@
 
 .aboutMe {
     display: flex;
-    margin-top: 800px;
+    margin-top: 600px;
     font-family: Poppins;
     font-weight: 300;
     position: relative;
+
+    @include breakpoint('small') {
+        display: block;
+        margin-top: 300px;
+    }
+
+    @include breakpoint('medium') {
+        display: block;
+    }
 
     @include breakpoint('medium') {
         display: block;

@@ -4,37 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    
-
+    <title>Martin Duchesne</title>
+    <meta property="og:site_name" content="Martin Duchesne" />
+    <meta property="og:type" content="Portfolio" />
+    <meta property="og:url" content="http://martinduchesne.com/" />
+    <meta property="og:title" content="Portfolio - Martin Duchesne" />
+    <meta property="og:description" content="All my work so far" />
+    <meta property="og:image" content="#" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@martinduchesne" />
+    <meta name="twitter:title" content="Portfolio - Martin Duchesne" />
+    <meta name="twitter:description" content="All my work so far" />
+    <meta name="twitter:image" content="#" />
+    <meta name="description" content="Explore my portfolio as a web developer with a strong focus on Front-End development. Discover my projects and skills.">
+    <script defer src="./schemaPerson.json" type="application/ld+json"></script>
     <script defer src="https://kit.fontawesome.com/7dedfb4a80.js" crossorigin="anonymous"></script>
     <script defer src="./burger.js" crossorigin="anonymous"></script>
     <script defer src="./project/project.js" crossorigin="anonymous"></script>
     <script defer src="./slider.js"></script>
-
   </head>
   <body class="background">
-    
-      <nav class="navBar">
+    <section id="home">
+      <div class="navBar">
         <div class="header">
           <div class="header__container">
           <div class="header__container__logo">Logo
-            <p>FRONT
-               DEVELOPPER</p> 
+            <h2>FRONT
+               DEVELOPPER</h2> 
           </div>
         </div>
       </div>
-
       <div class="header__nav">
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__list_item"><a class="nav__link" href="#">Home</a></li>
-            <li class="nav__list_item"><a class="nav__link" href="#">About me</a></li>
-            <li class="nav__list_item"><a class="nav__link" href="#">My Work</a></li>
-            <li class="nav__list_item"><a class="nav__link" href="#">Contact</a></li>
+            <li class="nav__list_item"><a class="nav__link" href="#home">Home</a></li>
+            <li class="nav__list_item"><a class="nav__link" href="#aboutMe">About me</a></li>
+            <li class="nav__list_item"><a class="nav__link" href="#myWork">My Work</a></li>
+            <li class="nav__list_item"><a class="nav__link" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
-      <ul class="navBar__link">
+      <div class="navBar__link">
         <div class="burgerMenu">
           <div class="burgerMenu__button">
             <div class="menu-btn">
@@ -44,37 +54,39 @@
             </div>
           </div>
         </div>
-        <li>Home</li>
-        <li>About me</li>
-        <li>My Work</li>
-        <li><p class="button__contact"> Contact</p></li>
-    </ul>
-      </nav>
+        <div><a class="navBar__void" href="#home">Home</a></div>
+        <div><a class="navBar__void" href="#aboutMe">About me</a></div>
+        <div><a class="navBar__void" href="#myWork">My Work</a></div>
+        <div><a class="button__contact" href="#contact">Contact</a></div>
+      </div>
       <div class="banner">
         <div class="banner__left">
-          <p class="banner__left__hello">Hi...</p>
-          <p class="banner__left__presentation"><span class="banner__left__presentation__pronoun">I'm </span><span class="banner__left__presentation--color">Martin.</span></p>
-          <p class="banner__left__description">A passionate Front-End Developper</p>
+          <h3 class="banner__left__hello">Hi...</h3>
+          <h3 class="banner__left__presentation"><span class="banner__left__presentation__pronoun">I'm </span><span class="banner__left__presentation--color">Martin.</span></h3>
+          <h4 class="banner__left__description">A passionate Front-End Developper</h4>
           <span class="banner__left__link">
-              <a class="banner__left__link" href="#">Download CV</a><a class="button__hireMe" href="#">Hire me</a>
+              <a class="banner__left__link" href="#">Download CV</a><a class="button__hireMe" href="#contact">Hire me</a>
           </span>
         </div>
         <div class="banner__right">
           <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
             <div class="card__content">
-              <div class="card__content__round">
-              </div>
+              <img class="card__content__round" src="./img/profile/openclass.JPG" alt="profile picture">
               <div>
-                <h2>Martin Duchesne</h2>
-                <h3>Front End Developper</h3>
+                <h1>Martin Duchesne</h1>
+                <h2>Front End Developper</h2>
+                <a  href="https://www.linkedin.com/in/martin-duchesne-2b6072226/"><i class="fa-brands fa-linkedin"><span class="sr-only">Linkedin Link</span></i></a>
               </div>
             </div>
           </div>
       </div>
     </div>
+  </div>
+  </section>
     <div class="container">
+      <section id="aboutMe">
         <div class="aboutMe">
-          <p class="aboutMe__sideText">DevFrontEnd</p>
+          <h3 class="aboutMe__sideText">DevFrontEnd</h3>
           <div class="aboutMe__container">
         </div>
         <div class="borderContainer">
@@ -82,58 +94,56 @@
           <div class="border__top"></div>
           <div class="aboutMe__content">
             <h2>About Me</h2>
-            <p>Passionné par la conception web et doté d'une solide formation en développement front-end, je suis un développeur front-end junior dédié à la création d'expériences utilisateur fluides et esthétiquement agréables. Mon parcours m'a permis d'acquérir des compétences essentielles en HTML, CSS et JavaScript, et je suis continuellement à la recherche des dernières tendances pour rester à jour dans cet univers technologique en évolution rapide.
-              Mes projets témoignent de mon sens du détail, de ma capacité à travailler en équipe et de mon engagement à produire un travail de qualité qui répond aux besoins des utilisateurs tout en respectant les contraintes techniques et esthétiques.
-            </p>
-
+            <p>Passionate about web design and equipped with a strong background in front-end development, I am a junior front-end developer dedicated to creating smooth and aesthetically pleasing user experiences. My journey has allowed me to acquire essential skills in HTML, CSS, and JavaScript, and I am continually seeking out the latest trends to stay up-to-date in this rapidly evolving technological landscape. My projects reflect my attention to detail, my ability to work collaboratively, and my commitment to producing quality work that meets the needs of users while adhering to technical and aesthetic constraints</p>
             <a class="button__cv" href="#">Download CV</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="whatIDo">
+    <section id="whatIDo" class="whatIDo">
         <h2>What I Do</h2>
-        <p class="whatIDo__specializing">Specializing In</p>
+        <h3 class="whatIDo__specializing">Specializing In</h3>
         <div class="whatIDo__content">
           <div class="whatIDo__content__container">
-            <img class="placeholderCircle" src="./img/svg/react_icon.svg">
-              <h3 class="placeholderCircle__title">Mobile Apps</h3>
+            <img class="placeholderCircle" src="./img/svg/circlereact.svg" alt="react icon">
+              <h4 class="placeholderCircle__title">React</h4>
               <p class="placeholderCircle__description">Landing pages, Wireframing, prototyping, 
                 Mobile app design, User flow
               </p>
             </div>
             <div class="whatIDo__content__container">
-              <div><img class="placeholderCircle" src="./img/svg/circletest2.svg">
+              <div><img class="placeholderCircle" src="./img/svg/circletest2.svg" alt="front-end icon">
             </div>
-                <h3 class="placeholderCircle__title">Mobile Apps</h3>
-                <p class="placeholderCircle__description">Landing pages, Wireframing, prototyping, 
-                  Mobile app design, User flow
+                <h4 class="placeholderCircle__title">Front-End</h4>
+                <p class="placeholderCircle__description">Responsive Design, Attention to Detail, Mobile-First Design, Creativity.
                 </p>
               </div>
               <div class="whatIDo__content__container">
-                <img class="placeholderCircle" src="./img/svg/screen_icon.svg">
-                  <h3 class="placeholderCircle__title">Mobile Apps</h3>
-                  <p class="placeholderCircle__description">Landing pages, Wireframing, prototyping, 
-                    Mobile app design, User flow
+                <img class="placeholderCircle" src="./img/svg/circlebackend.svg" alt="backend icon">
+                  <h4 class="placeholderCircle__title">Django</h4>
+                  <p class="placeholderCircle__description">Backend using Django and Django REST.
                   </p>
               </div>
           </div>
         </section>
-        <section>
+        <section id="myWork">
           <div class="recentProject">
             <h2 class="recentProject__title">My Recent Projects</h2>
             <div class="borderProject">
-              
           </div>
         </div>
         </section>
-        <section>
+        <section  id="mySkills">
           <div class="mySkills">
             <h2>My Skills</h2>
             <div class="mySkills__content">
               <div>
                 <i class="fa-brands fa-react"></i>
                 <p>React</p>
+              </div>
+              <div>
+                <img src="./img/svg/nextjs-13.svg" alt="nextjs icon">
+                <p>Next.js</p>
               </div>
               <div>
                 <i class="fa-brands fa-python"></i>
@@ -143,10 +153,26 @@
                 <i class="fa-brands fa-square-js"></i>
                 <p>Javascript</p>
               </div>
+              <div>
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS</p>
+              </div>
+              <div>
+                <img src="./img/svg/redux.svg" alt="redux icon">
+                <p>Redux</p>
+              </div>
+              <div>
+                <img src="./img/svg/django.svg" alt="django icon">
+                <p>Django</p>
+              </div>
             </div>
           </div>
         </section>
-        <section>
+        <section id="contact">
           <div class="contact">
             <div class="contact__content">
               <h2>Let's Talk!</h2>
@@ -174,7 +200,7 @@
               </label>
               <label>
                 PHONE NUMBER
-                <input type="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+                <input type="number" name="phoneNumber" placeholder="Enter your phone number">
               </label>
               <label>
                 YOUR EMAIL
@@ -185,7 +211,7 @@
               <div>
               <label>
                 MESSAGE
-                <div> <textarea name="message" placeholder="Enter your message"></textarea> </div>
+                <textarea name="message" placeholder="Enter your message"></textarea>
               </label>
               </div>
                 <button class="button__send" type="submit">SUBMIT</button>
@@ -193,30 +219,30 @@
               </form>
             </div>
           </div>
-        </div>
-      </section>
-  <footer class="footer">
-    <div class="footer__content">
-      <div class="footer__content__left">
-        <p class="footer__content__left__logo">Logo</p>
-        <p class="footer__content__left__followMe">Follow Me</p>
-        <i class="fa-brands fa-linkedin footer__content__left__icon"></i>
+        </section>
       </div>
-        <div class="footer__content__menu">
-
-          <div>
-            <h3>Home</h3>
-            <p>Hire Me</p>
-            <p>About Me</p>
-            <p>My Work</p>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__content__left">
+            <h2 class="footer__content__left__logo">Logo</h2>
+            <h3 class="footer__content__left__followMe">Follow Me</h3>
+            <i class="fa-brands fa-linkedin footer__content__left__icon"></i>
           </div>
-          <div>
-            <h3>Contact</h3>
-            <p><a href="mailto:martin.duchesne27@gmail.com">martin.duchesne27@gmail.com</a></p>
-            <p>Linkedin</p>
-          </div>  
+            <div class="footer__content__menu">
+            <div>
+              <h3>Home</h3>
+              <p>Hire Me</p>
+              <p>About Me</p>
+              <p>My Work</p>
+            </div>
+            <div class="footer__content__menu__contact">
+              <h3>Contact</h3>
+              <p><a href="mailto:martin.duchesne27@gmail.com">martin.duchesne27@gmail.com</a></p>
+              <p>Linkedin</p>
+            </div>  
+          </div>
         </div>
-  </footer>
+      </footer>
     <script type="text/javascript" src="/node_modules/vanilla-tilt/dist/vanilla-tilt.min.js"></script>
   </body>
 </html>

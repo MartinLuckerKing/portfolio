@@ -5,14 +5,17 @@
     color: $white-text;
     transition: 0.5s;
     @include buttonFull(16px, 43px);
-
-    &:hover {
-      transition: 0.5s;
-      font-size: 14px;
-      margin-top: 46px;
-      margin-bottom: 1px;
-           
+    
+    @include breakpointMin('medium') {
+      &:hover {
+        transition: 0.5s;
+        font-size: 14px;
+        margin-top: 46px;
+        margin-bottom: 1px;
+             
+      }
     }
+
 
     @include breakpoint('small') {
       min-width: 280px;
@@ -25,7 +28,16 @@
   }
 
   &__contact {
-    @include buttonFull(14px, 30px)
+    transition: 0.5s;
+    @include buttonFull(14px, 30px);
+
+    &:hover {
+      color: $white-text;
+      transition: 0.5s;
+      font-size: 14px;
+      margin: 2px 24.05px;
+    
+    }
   }
 
   &__hireMe {
@@ -33,12 +45,16 @@
     transition: 0.5s;
     @include buttonFull(16px, 43px);
 
-    &:hover {
-      transition: 0.5s;
-      font-size: 14px;
-      margin: 4px 3.9px;
-           
+    @include breakpointMin('medium') {
+      &:hover {
+
+        transition: 0.5s;
+        font-size: 14px;
+        margin: 4px 3.9px;
+             
+      }
     }
+
 
     @include breakpoint('small') {
       min-width: 280px;
@@ -62,7 +78,7 @@
     transition: 0.5s;
     @include buttonFull(18px, 30px);
 
-    @include breakpointMin('xxsmall') {
+    @include breakpointMin('medium') {
       &:hover {
         font-size: 14px;
         margin-bottom: 92px;
@@ -70,10 +86,9 @@
       }
     }
 
-    @include breakpoint('large') {
+    @include breakpointMin('medium') {
       &:hover {
         font-size: 14px;
-        margin-bottom: 32px;
         transition: 0.5s;
       }
     }
@@ -100,13 +115,15 @@
     @include buttonFull(18px, 30px);
     transition: 0.5s;
 
-
-    &:hover {
-      font-size: 19px;
-      transition: 0.5s;
-      margin: 21px 51px 1px 51px;
-
+    @include breakpointMin('medium') {
+      &:hover {
+        font-size: 19px;
+        transition: 0.5s;
+        margin: 21px 51px 1px 51px;
+  
+      }
     }
+
 
   }
 }

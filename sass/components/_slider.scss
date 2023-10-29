@@ -2,28 +2,24 @@
     perspective: 1200px;
     position: relative;
     max-width: 570px;
-    height: 500px;
+    height: 750px;
     margin: 0 auto;
     display: flex;
 
     @include breakpoint('small') {
         right: 0px;
-        height: 450px;
+        height: 600px;
     }
 
     @include breakpoint('xsmall') {
         right: 0px;
-        height: 350px;
+        height: 500px;
     }
 
     @include breakpoint('xxsmall') {
         right: 0px;
-        height: 300px;
+        height: 450px;
     }
-
-
-
-
 }
 
 .slide {
@@ -39,6 +35,7 @@
 .slide img {
     max-width: 100%;
     height: auto;
+    border-radius: 2px;
     display: block;
 }
 
@@ -95,19 +92,19 @@
 
     @include breakpoint('small') {
         right: 2px;
-        height: 40px;
-        width: 40px;
+        height: 44px;
+        width: 44px;
     }
 
     @include breakpoint('xsmall') {
         right: -5px;
-        height: 35px;
-        width: 35px;
+        height: 44px;
+        width: 44px;
     }
     @include breakpoint('xxsmall') {
-        right: -13px;
-        height: 30px;
-        width: 30px;
+        right: -15px;
+        height: 44px;
+        width: 44px;
     }
 
 
@@ -130,24 +127,11 @@
 
     @include breakpoint('small') {
         right: 0px;
-        height: 13px;
-        width: 14px;
+        height: 14px;
+        width: 15px;
         transform: translate(-45%, -50%);
     }
 
-    @include breakpoint('xsmall') {
-        right: 0px;
-        height: 13px;
-        width: 14px;
-        transform: translate(-40%, -50%);
-    }
-
-    @include breakpoint('xxsmall') {
-        right: 0px;
-        height: 12px;
-        width: 13px;
-        transform: translate(-35%, -50%);
-    }
 
 }
 

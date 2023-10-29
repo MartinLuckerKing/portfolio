@@ -1,7 +1,7 @@
 .footer {
     z-index: 2;
     min-height: 300px;
-    background-color: rgb(8, 15, 18, 1);
+    background-color: rgb(10 17 20 / 95%);
     -webkit-box-shadow: 0px -112px 200px 133px rgba(8, 15, 18,0.75);
     -moz-box-shadow: 0px -112px 200px 133px rgba(8, 15, 18,0.75);
     box-shadow: 0px -112px 200px 133px rgba(8, 15, 18,0.75);
@@ -36,21 +36,25 @@
 
             @include breakpoint('large') {
                 position: relative;
-                margin-left: 20px;
+                margin-left: 10px;
+                bottom: 0;
+
+            @include breakpoint('medium') {
+                position: relative;
+                margin-bottom: 70px;
+                text-align: left;
+                margin-left: 10px;
                 bottom: 0;
             }
             
-
-            @include breakpoint('small') {
-                margin-bottom: 25px;
             }
-
             
 
             &__logo {
             
                 font-size: 40px;
                 color: $primary-color;
+                font-weight: 400;
                 margin-bottom: 30px;
             }
     
@@ -76,12 +80,23 @@
             flex-direction: row;
             column-gap: 220px;
 
+            &__contact {
+                @include breakpoint('medium') {
+                    margin-top: 50px;
+                }
+            }
+
             @include breakpoint('large') {
                 position: relative;
                 margin-right: 20px;
                 column-gap: 80px;
                 bottom: 0;
                 
+            }
+
+            @include breakpoint('medium') {
+                flex-direction: column;
+                margin-left: 10px;
             }
 
             @include breakpoint('small-intermediate') {

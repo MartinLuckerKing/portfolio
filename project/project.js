@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         sliderElement.className = 'slider';
         projectElement.appendChild(sliderElement);
 
-        const nextButton = document.createElement('button');
+        const nextButton = document.createElement('div');
         nextButton.className = 'next';
         const triangleBlanc = document.createElement('span');
         triangleBlanc.className = 'triangle-blanc';

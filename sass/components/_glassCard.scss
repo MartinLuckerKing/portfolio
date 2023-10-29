@@ -22,36 +22,37 @@
         align-items: center;
         column-gap: 30px;
 
-        &__round {
-            width: 85px;
-            height: 85px;
-            background-color: lightblue;
-            border-radius: 50%;
+        &__info {
+            display: flex;
+            font-weight: 700;
+            flex-direction: column;
+
         }
 
-        h2 {
+        &__round {
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: 0 30%;
+        }
+
+        a {
+            color: $white-text;
+            
+            i {
+                margin-top: 15px;
+            }
+        }
+
+
+
+        h1 {
             font-size: 16px;
             font-weight: 700;
             margin-bottom: 15px;
         }
 
-        h3 {
-
-        }
     }
   }
-
-.placeholder {
-    position: absolute;
-    z-index: 0;
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    top: 400px;
-    left: 1400px;
-    right: 0;
-    bottom: 0;
-    background-color: blue;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3)
-}
 

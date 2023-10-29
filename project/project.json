@@ -2,30 +2,68 @@
   "projects": [
     {
       "title": "Booki",
-      "text": "Passionné par la conception web et doté d'une solide formation en développement front-end, je suis un développeur front-end junior dédié à la création d'expériences utilisateur fluides et esthétiquement agréables. Mon parcours m'a permis d'acquérir des compétences essentielles en HTML, CSS et JavaScript, et je suis continuellement à la recherche des dernières tendances pour rester à jour dans cet univers technologique en évolution rapide. Mes projets témoignent de mon sens du détail, de ma capacité à travailler en équipe et de mon engagement à produire un travail de qualité qui répond aux besoins des utilisateurs tout en respectant les contraintes techniques et esthétiques.",
+      "text": "Booki is a carefully crafted responsive mockup, developed in HTML and CSS, for a company specializing in booking accommodations and activities throughout France. The design prioritizes user experience, ensuring seamless navigation and interaction across all devices.",
       "visitWebsiteButtonClass": "button__visitWebsite",
       "visitWebsiteButtonText": "Visit Website",
-      "visitWebsiteLink": "#",
+      "visitWebsiteLink": "https://martinluckerking.github.io/Bookii/",
       "slides": [
-        {"id": "slide1", "imgSrc": "./img/booki/accueil-desktop.PNG", "imgAlt": "Image 1"},
-        {"id": "slide2", "imgSrc": "./img/booki/accueil-desktop.PNG", "imgAlt": "Image 2"},
-        {"id": "slide3", "imgSrc": "./img/booki/accueil-desktop.PNG", "imgAlt": "Image 3"}
+        {"id": "slide1", "imgSrc": "./img/booki/booki1.webp", "imgAlt": "Image 1"},
+        {"id": "slide2", "imgSrc": "./img/booki/bookiResponsive.webp", "imgAlt": "Image 2"},
+        {"id": "slide3", "imgSrc": "./img/booki/bookiResponsive2.webp", "imgAlt": "Image 3"}
       ]
     },
 
     {
-      "title": "Booki",
-      "text": "Passionné par la conception web et doté d'une solide formation en développement front-end, je suis un développeur front-end junior dédié à la création d'expériences utilisateur fluides et esthétiquement agréables. Mon parcours m'a permis d'acquérir des compétences essentielles en HTML, CSS et JavaScript, et je suis continuellement à la recherche des dernières tendances pour rester à jour dans cet univers technologique en évolution rapide. Mes projets témoignent de mon sens du détail, de ma capacité à travailler en équipe et de mon engagement à produire un travail de qualité qui répond aux besoins des utilisateurs tout en respectant les contraintes techniques et esthétiques.",
+      "title": "OhMyFood",
+      "text": "OhMyFood is a meticulously crafted responsive mockup, developed using HTML and SASS, envisioned for a sophisticated online reservation platform. This platform empowers users to seamlessly book both seats and meals in advance, guaranteeing a swift and highly efficient service as soon as they arrive. The design and functionality of OhMyFood have been thoughtfully curated to enhance user experience.",
       "visitWebsiteButtonClass": "button__visitWebsite",
       "visitWebsiteButtonText": "Visit Website",
-      "visitWebsiteLink": "#",
+      "visitWebsiteLink": "https://martinluckerking.github.io/ohmyfood/",
       "slides": [
-        {"id": "slide1", "imgSrc": "./img/booki/accueil-desktop.PNG", "imgAlt": "Image 1"},
-        {"id": "slide2", "imgSrc": "./img/booki/accueil-desktop.PNG", "imgAlt": "Image 2"},
-        {"id": "slide3", "imgSrc": "./img/booki/accueil-desktop.PNG", "imgAlt": "Image 3"}
+        {"id": "slide1", "imgSrc": "./img/ohMyFood/ohMyFood1.webp", "imgAlt": "Image 1"},
+        {"id": "slide2", "imgSrc": "./img/ohMyFood/ohMyFood2.webp", "imgAlt": "Image 2"},
+        {"id": "slide3", "imgSrc": "./img/ohMyFood/ohMyFood3.webp", "imgAlt": "Image 3"}
+      ]
+    },
+
+    {
+      "title": "ArgentBank",
+      "text": "ArgentBank is a banking platform developed with React and Redux, aimed at providing users with the capability to efficiently manage their bank accounts. The development of this platform has been primarily focused on learning Redux, ensuring a robust and scalable application. This project serves as a testament to advanced web development skills and a deep understanding of state management.",
+      "visitWebsiteButtonClass": "button__visitWebsite",
+      "visitWebsiteButtonText": "Visit Website",
+      "visitWebsiteLink": "https://github.com/MartinLuckerKing/ArgentBank-website",
+      "slides": [
+        {"id": "slide1", "imgSrc": "./img/argentBank/argentBank1.webp", "imgAlt": "Image 1"},
+        {"id": "slide2", "imgSrc": "./img/argentBank/argentBank2.webp", "imgAlt": "Image 2"},
+        {"id": "slide3", "imgSrc": "./img/argentBank/argentBank3.webp", "imgAlt": "Image 3"}
+      ]
+    },
+
+    {
+      "title": "Kasa",
+      "text": "Kasa represents the front-end component of an AirBnB-like platform, meticulously crafted with a mobile-first approach, serving as a practical learning journey through the fundamentals of React. This project involved setting up a scalable structure and decomposing the application into modular components, ensuring a robust and maintainable codebase.",
+      "visitWebsiteButtonClass": "button__visitWebsite",
+      "visitWebsiteButtonText": "Visit Website",
+      "visitWebsiteLink": "https://github.com/MartinLuckerKing/kasa",
+      "slides": [
+        {"id": "slide1", "imgSrc": "./img/kasa/kasa1.webp", "imgAlt": "Image 1"},
+        {"id": "slide2", "imgSrc": "./img/kasa/kasa2.webp", "imgAlt": "Image 2"},
+        {"id": "slide3", "imgSrc": "./img/kasa/kasa3.webp", "imgAlt": "Image 3"}
+      ]
+    },
+
+    {
+      "title": "E-commerce",
+      "text": "I developed both the back-end and front-end of an e-commerce website using Python and its Django framework for the backend, and HTML and CSS for the front-end. Features available on the site include a payment system with PayPal integration, order generation with a unique ID, as well as all necessary shipping information. The site also features a login system, profile editing, product addition, and the ability to add categories and sub-categories, all manageable through an interface in the back-end.",
+      "visitWebsiteButtonClass": "button__visitWebsite",
+      "visitWebsiteButtonText": "Visit Website",
+      "visitWebsiteLink": "https://github.com/MartinLuckerKing/kasa",
+      "slides": [
+        {"id": "slide1", "imgSrc": "./img/ecommerce/ecommerce1.webp", "imgAlt": "Image 1"},
+        {"id": "slide2", "imgSrc": "./img/ecommerce/ecommerce2.webp", "imgAlt": "Image 2"},
+        {"id": "slide3", "imgSrc": "./img/ecommerce/ecommerce3.webp", "imgAlt": "Image 3"}
       ]
     }
-    
   ]
 
 }
