@@ -1425,7 +1425,7 @@ table {
   right: -5px;
   bottom: -5px;
   left: -5px;
-  padding: 5px;
+  padding: 3px;
   background: linear-gradient(45deg, #11ADFF, #11ADFF, white, white);
   --sl: red 26%, transparent 0%, transparent 80%, red 0%;
   --m:
@@ -1435,6 +1435,8 @@ table {
     linear-gradient(var(--sl)) 0 0/ 13px 13px round;
   -webkit-mask: var(--m);
   -webkit-mask-composite: xor, source-over, source-in, source-over;
+  -moz-mask-composite: xor, source-over, source-in, source-over;
+  -moz-mask: var(--m);
   mask: var(--m);
   mask-composite: exclude, add, intersect, add;
   content: "";

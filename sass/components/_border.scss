@@ -146,7 +146,7 @@
     
     position: absolute;
     top: -$bw; right: -$bw; bottom: -$bw; left: -$bw;
-    padding: $bw;
+    padding: 3px;
     background: linear-gradient(45deg, $primary-color, $primary-color, white, white);
     --sl: red 26%, transparent 0%, transparent 80%, red 0%;
     --m: 
@@ -156,6 +156,8 @@
       linear-gradient(var(--sl)) 0 0/ 13px 13px round;
     -webkit-mask: var(--m);
     -webkit-mask-composite: xor, source-over, source-in, source-over;
+    -moz-mask-composite: xor, source-over, source-in, source-over;
+    -moz-mask: var(--m);
             mask: var(--m);
             mask-composite: exclude, add, intersect, add;
     content: ''
