@@ -57,7 +57,7 @@
       "text": "I developed both the back-end and front-end of an e-commerce website using Python and its Django framework for the backend, and HTML and CSS for the front-end. Features available on the site include a payment system with PayPal integration, order generation with a unique ID, as well as all necessary shipping information. The site also features a login system, profile editing, product addition, and the ability to add categories and sub-categories, all manageable through an interface in the back-end.",
       "visitWebsiteButtonClass": "button__visitWebsite",
       "visitWebsiteButtonText": "Visit Website",
-      "visitWebsiteLink": "https://github.com/MartinLuckerKing/kasa",
+      "visitWebsiteLink": "https://github.com/MartinLuckerKing/ecommerce",
       "slides": [
         {"id": "slide1", "imgSrc": "./img/ecommerce/ecommerce1.webp", "imgAlt": "Image 1"},
         {"id": "slide2", "imgSrc": "./img/ecommerce/ecommerce2.webp", "imgAlt": "Image 2"},

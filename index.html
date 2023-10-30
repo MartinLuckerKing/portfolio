@@ -7,14 +7,14 @@
     <title>Martin Duchesne</title>
     <meta property="og:site_name" content="Martin Duchesne" />
     <meta property="og:type" content="Portfolio" />
-    <meta property="og:url" content="http://martinduchesne.com/" />
+    <meta property="og:url" content="https://martinduchesne.com/" />
     <meta property="og:title" content="Portfolio - Martin Duchesne" />
     <meta property="og:description" content="All my work so far" />
-    <meta property="og:image" content="http://martinduchesne.com/img/meta/presentation.jpg" />
+    <meta property="og:image" content="./img/meta/presentation.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@martinduchesne" />
     <meta name="twitter:title" content="Portfolio - Martin Duchesne" />
-    <meta name="twitter:description" content="All my work so far" />
+    <meta name="twitter:description" content="My work" />
     <meta name="twitter:image" content="./img/meta/presentation.jpg" />
     <meta name="description" content="Explore my portfolio as a web developer with a strong focus on Front-End development. Discover my projects and skills.">
     <script defer src="./schemaPerson.json" type="application/ld+json"></script>
@@ -28,25 +28,25 @@
       <div class="navBar">
         <div class="header">
           <div class="header__container">
-          <div class="header__container__logo">Logo
+          <div class="header__container__logo" aria-label="Logo">Martin D.
             <h2>FRONT
                DEVELOPPER</h2> 
           </div>
         </div>
       </div>
       <div class="header__nav">
-        <nav class="nav">
+        <nav class="nav" role="navigation">
           <ul class="nav__list">
-            <li class="nav__list_item"><a class="nav__link" href="#home">Home</a></li>
-            <li class="nav__list_item"><a class="nav__link" href="#aboutMe">About me</a></li>
-            <li class="nav__list_item"><a class="nav__link" href="#myWork">My Work</a></li>
-            <li class="nav__list_item"><a class="nav__link" href="#contact">Contact</a></li>
+            <li class="nav__list_item"><a class="nav__link" aria-label="home" href="#home">Home</a></li>
+            <li class="nav__list_item"><a class="nav__link" aria-label="about me" href="#aboutMe">About me</a></li>
+            <li class="nav__list_item"><a class="nav__link" aria-label="my work" href="#myWork">My Work</a></li>
+            <li class="nav__list_item"><a class="nav__link" aria-label="contact" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
       <div class="navBar__link">
         <div class="burgerMenu">
-          <div class="burgerMenu__button">
+          <div class="burgerMenu__button" aria-label="Menu">
             <div class="menu-btn">
               <span class="bar"></span>
               <span class="bar"></span>
@@ -54,12 +54,12 @@
             </div>
           </div>
         </div>
-        <div><a class="navBar__void" href="#home">Home</a></div>
-        <div><a class="navBar__void" href="#aboutMe">About me</a></div>
-        <div><a class="navBar__void" href="#myWork">My Work</a></div>
-        <div><a class="button__contact" href="#contact">Contact</a></div>
+        <div><a class="navBar__void" aria-label="home" href="#home">Home</a></div>
+        <div><a class="navBar__void" aria-label="about me" href="#aboutMe">About me</a></div>
+        <div><a class="navBar__void" aria-label="my work" href="#myWork">My Work</a></div>
+        <div><a class="button__contact" aria-label="contact" href="#contact">Contact</a></div>
       </div>
-      <div class="banner">
+      <div class="banner" role="banner">
         <div class="banner__left">
           <h3 class="banner__left__hello">Hi...</h3>
           <h3 class="banner__left__presentation"><span class="banner__left__presentation__pronoun">I'm </span><span class="banner__left__presentation--color">Martin.</span></h3>
@@ -69,7 +69,7 @@
           </span>
         </div>
         <div class="banner__right">
-          <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+          <div class="card" aria-label="Profile Card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
             <div class="card__content">
               <img class="card__content__round" src="./img/profile/openclass.JPG" alt="profile picture">
               <div>
@@ -107,8 +107,7 @@
           <div class="whatIDo__content__container">
             <img class="placeholderCircle" src="./img/svg/circlereact.svg" alt="react icon">
               <h4 class="placeholderCircle__title">React</h4>
-              <p class="placeholderCircle__description">Landing pages, Wireframing, prototyping, 
-                Mobile app design, User flow
+              <p class="placeholderCircle__description">Reusable Components, Performance and Optimization.
               </p>
             </div>
             <div class="whatIDo__content__container">
@@ -221,24 +220,24 @@
           </div>
         </section>
       </div>
-      <footer class="footer">
+      <footer class="footer" role="contentinfo">
         <div class="footer__content">
           <div class="footer__content__left">
-            <h2 class="footer__content__left__logo">Logo</h2>
+            <h2 class="footer__content__left__logo">Martin D.</h2>
             <h3 class="footer__content__left__followMe">Follow Me</h3>
-            <i class="fa-brands fa-linkedin footer__content__left__icon"></i>
+            <a href="https://www.linkedin.com/in/martin-duchesne-2b6072226/"><i class="fa-brands fa-linkedin footer__content__left__icon"></i></a>
           </div>
             <div class="footer__content__menu">
             <div>
-              <h3>Home</h3>
-              <p>Hire Me</p>
-              <p>About Me</p>
-              <p>My Work</p>
+              <h3><a aria-label="home" href="#contact">Home</a></h3>
+              <p><a aria-label="contact" href="#contact">Hire Me</a></p>
+              <p><a aria-label="about me" href="#aboutMe">About Me</a></p>
+              <p><a aria-label="my work" href="#myWork">My Work</a></p>
             </div>
             <div class="footer__content__menu__contact">
-              <h3>Contact</h3>
-              <p><a href="mailto:martin.duchesne27@gmail.com">martin.duchesne27@gmail.com</a></p>
-              <p>Linkedin</p>
+              <h3><a aria-label="home" href="#contact">Contact</a></h3>
+              <p><a aria-label="Email Martin Duchesne" href="mailto:martin.duchesne27@gmail.com">martin.duchesne27@gmail.com</a></p>
+              <p><a aria-label="Profil Linkedin Martin Duchesne" href="https://www.linkedin.com/in/martin-duchesne-2b6072226/">Linkedin</a></p>
             </div>  
           </div>
         </div>

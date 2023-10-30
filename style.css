@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .container {
   margin: 0 auto;
@@ -104,6 +105,7 @@ table {
 .header__container__logo {
   margin-top: 32px;
   z-index: 3;
+  font-family: alex brush;
   font-size: 40px;
   color: #11ADFF;
 }
@@ -129,9 +131,16 @@ table {
 .navBar__link {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
   color: #D9D9D9;
   justify-content: flex-end;
+}
+.navBar__link div:last-child {
+  margin-right: 30px;
+}
+@media (max-width: 768px) {
+  .navBar__link div:last-child {
+    margin-right: 0;
+  }
 }
 @media (max-width: 768px) {
   .navBar__link {
@@ -143,9 +152,13 @@ table {
     display: none;
   }
 }
+.navBar__link div {
+  margin-top: 50px;
+}
 @media (max-width: 768px) {
   .navBar__link div {
     display: block;
+    margin-top: 0px;
   }
 }
 .navBar__link p {
@@ -301,6 +314,11 @@ table {
   color: #D9D9D9;
   font-weight: 400;
 }
+@media (min-width: 2560px) {
+  .banner__left__hello {
+    font-size: 60px;
+  }
+}
 .banner__left__presentation {
   font-size: 60px;
   color: #D9D9D9;
@@ -309,17 +327,37 @@ table {
 .banner__left__presentation--color {
   color: #11ADFF;
 }
+@media (min-width: 2560px) {
+  .banner__left__presentation {
+    font-size: 80px;
+  }
+}
 .banner__left__presentation__pronoun {
   font-size: 50px;
   font-weight: 400;
+}
+@media (min-width: 2560px) {
+  .banner__left__presentation__pronoun {
+    font-size: 70px;
+  }
 }
 .banner__left__description {
   font-size: 18px;
   color: #D9D9D9;
   font-weight: 500;
 }
+@media (min-width: 2560px) {
+  .banner__left__description {
+    font-size: 28px;
+  }
+}
 .banner__left__link {
   margin-top: 30px;
+}
+@media (min-width: 2560px) {
+  .banner__left__link {
+    font-size: 20px;
+  }
 }
 @media (max-width: 425px) {
   .banner__left__link {
@@ -338,8 +376,20 @@ table {
   border-radius: 1px;
   padding: 15px 20px;
   margin-right: 28px;
+  font-weight: 600;
   color: #11ADFF;
   transition: 0.5s;
+}
+@media (min-width: 2560px) {
+  .banner__left__link:first-child {
+    border: 2px solid #11ADFF;
+    font-size: 22px;
+    padding: 18.5px 21.15px;
+  }
+  .banner__left__link:first-child:hover {
+    font-size: 20px;
+    padding: 17.5px 20.5px;
+  }
 }
 @media (min-width: 768px) {
   .banner__left__link:first-child:hover {
@@ -351,6 +401,17 @@ table {
     margin-left: 5.2px;
     margin-right: 29.57px;
     transition: 0.5s;
+  }
+}
+@media (min-width: 768px) and (min-width: 2560px) {
+  .banner__left__link:first-child:hover {
+    border: 2px solid #DDDDDD;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 7.2px;
+    margin-right: 36px;
+    font-size: 20px;
+    padding: 17.5px 20.5px;
   }
 }
 @media (max-width: 425px) {
@@ -377,7 +438,17 @@ table {
 }
 @media (max-width: 768px) {
   .banner__right {
-    display: none;
+    display: flex;
+    margin-left: 20%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 600px) {
+  .banner__right {
+    display: flex;
+    align-items: center;
+    margin-left: 0%;
+    margin-right: 0;
   }
 }
 
@@ -391,7 +462,7 @@ table {
 @media (max-width: 425px) {
   .aboutMe {
     display: block;
-    margin-top: 300px;
+    margin-top: 200px;
   }
 }
 @media (max-width: 768px) {
@@ -990,7 +1061,16 @@ table {
 }
 @media (max-width: 968px) {
   .footer__content {
+    display: flex;
+    margin-left: 50px;
+    flex-direction: row;
     padding-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__content {
+    position: relative;
+    flex-direction: column;
   }
 }
 @media (max-width: 600px) {
@@ -1006,6 +1086,7 @@ table {
   }
 }
 .footer__content__left {
+  margin-left: 20px;
   position: absolute;
   bottom: -70px;
 }
@@ -1028,6 +1109,7 @@ table {
 .footer__content__left__logo {
   font-size: 40px;
   color: #11ADFF;
+  font-family: alex brush;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -1045,8 +1127,16 @@ table {
   display: flex;
   color: #DDDDDD;
   text-align: left;
+  margin-right: 20px;
   flex-direction: row;
   column-gap: 220px;
+}
+.footer__content__menu a {
+  transition: 0.5s;
+}
+.footer__content__menu a:hover {
+  transition: 0.5s;
+  color: #11ADFF;
 }
 @media (max-width: 768px) {
   .footer__content__menu__contact {
@@ -1075,9 +1165,11 @@ table {
 }
 .footer__content__menu h3 {
   font-weight: 400;
-  font-size: 25px;
   letter-spacing: 1px;
   margin-bottom: 46px;
+}
+.footer__content__menu h3 a {
+  font-size: 25px;
 }
 .footer__content__menu p {
   margin-bottom: 26px;
@@ -1124,6 +1216,9 @@ table {
   padding: 14px 30px;
   border-radius: 1px;
 }
+.button__contact a {
+  margin-right: 50px;
+}
 .button__contact:hover {
   color: #DDDDDD;
   transition: 0.5s;
@@ -1142,6 +1237,21 @@ table {
     transition: 0.5s;
     font-size: 14px;
     margin: 4px 3.9px;
+  }
+}
+@media (min-width: 2560px) {
+  .button__hireMe {
+    background-color: #11ADFF;
+    padding: 20.5px 56.17px;
+    border-radius: 1px;
+    font-size: 22px;
+  }
+  .button__hireMe:hover {
+    transition: 0.5s;
+    font-size: 20px;
+    background-color: #11ADFF;
+    padding: 18.5px 50.17px;
+    border-radius: 1px;
   }
 }
 @media (max-width: 425px) {
@@ -1224,9 +1334,20 @@ table {
   backdrop-filter: blur(10px);
   clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 89%);
 }
+@media (max-width: 600px) {
+  .card {
+    max-width: 350px;
+    height: 203px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 @media (max-width: 425px) {
   .card {
-    display: none;
+    max-width: 300px;
+    height: 203px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 .card__content {
@@ -1257,6 +1378,10 @@ table {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 15px;
+}
+.card__content h2 {
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .blackGlass {
@@ -1480,6 +1605,8 @@ table {
 
 .slide img {
   max-width: 100%;
+  max-width: 300px;
+  max-height: 450px;
   height: auto;
   border-radius: 2px;
   display: block;

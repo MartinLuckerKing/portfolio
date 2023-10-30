@@ -7,6 +7,7 @@
     box-shadow: 0px -112px 200px 133px rgba(8, 15, 18,0.75);
 
     &__content {
+        
         position: relative;
         max-width: 1440px;
         margin: 0 auto;
@@ -16,7 +17,15 @@
         color: #bfbfbf;
 
         @include breakpoint('large') {
+            display: flex;
+            margin-left: 50px;
+            flex-direction: row;
             padding-top: 30px;
+        }
+
+        @include breakpoint('medium') {
+            position: relative;
+            flex-direction: column;
         }
 
         @include breakpoint('small-intermediate') {
@@ -30,7 +39,7 @@
         }
 
         &__left {
-
+            margin-left: 20px;
             position: absolute;
             bottom: -70px;
 
@@ -54,6 +63,7 @@
             
                 font-size: 40px;
                 color: $primary-color;
+                font-family: alex brush;
                 font-weight: 400;
                 margin-bottom: 30px;
             }
@@ -77,8 +87,20 @@
             display: flex;
             color: $white-text;
             text-align: left;
+            margin-right: 20px;
             flex-direction: row;
             column-gap: 220px;
+            
+
+            a {
+                transition: 0.5s;
+                &:hover {
+                    transition: 0.5s;
+                    color: $primary-color;
+                }
+            }
+
+
 
             &__contact {
                 @include breakpoint('medium') {
@@ -107,9 +129,12 @@
 
             h3 {
                 font-weight: 400;
-                font-size: 25px;
                 letter-spacing: 1px;
                 margin-bottom: 46px;
+
+                a {
+                    font-size: 25px;
+                }
 
             }
 
@@ -119,6 +144,8 @@
                 font-weight: 400;
                 font-size: 16px;
                 letter-spacing: 1px;
+
+                
             }
 
             a {
@@ -128,6 +155,8 @@
                 font-size: 16px;
                 letter-spacing: 1px;
                 text-decoration: none;
+
+
             }
         }
     }

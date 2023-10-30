@@ -31,6 +31,11 @@
     transition: 0.5s;
     @include buttonFull(14px, 30px);
 
+    a {
+      margin-right: 50px;
+
+    }
+
     &:hover {
       color: $white-text;
       transition: 0.5s;
@@ -53,8 +58,22 @@
         margin: 4px 3.9px;
              
       }
+      
+      
     }
+    @include breakpointMin('xxlarge') {
+      @include buttonFull(20.5px, 56.17px);
+      font-size: 22px;
 
+      &:hover {
+        transition: 0.5s;
+        font-size: 20px;
+        @include buttonFull(18.5px, 50.17px);
+
+      }
+      
+      
+    }
 
     @include breakpoint('small') {
       min-width: 280px;

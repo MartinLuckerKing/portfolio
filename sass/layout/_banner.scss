@@ -14,6 +14,7 @@
         min-width: 300px;
         margin-top: 260px;
 
+
         @include breakpoint('xlarge') {
             margin-left: 0%;
         }
@@ -29,6 +30,12 @@
         color: #D9D9D9;
         font-weight: 400;
 
+        
+        @include breakpointMin('xxlarge') {
+            font-size: 60px;
+
+        }
+
         }
 
         &__presentation {
@@ -39,10 +46,21 @@
             &--color {
                 color: #11ADFF;
             } 
+                    
+        @include breakpointMin('xxlarge') {
+            font-size: 80px;
+
+        }
 
             &__pronoun {
                 font-size: 50px;
                 font-weight: 400;
+
+                        
+            @include breakpointMin('xxlarge') {
+                font-size: 70px;
+
+        }
             }
         }
 
@@ -50,11 +68,21 @@
             font-size: 18px;
             color: #D9D9D9;
             font-weight: 500;
+
+            @include breakpointMin('xxlarge') {
+                font-size: 28px;
+
+        }
             
         }
 
         &__link {
             margin-top: 30px;
+
+            @include breakpointMin('xxlarge') {
+                font-size: 20px;
+
+        }
 
             @include breakpoint('small') {
                 display: flex;
@@ -76,8 +104,23 @@
             border-radius: 1px;
             padding: 15px 20px;
             margin-right: 28px;
+            font-weight: 600;
             color: #11ADFF;
             transition: 0.5s;
+
+            @include breakpointMin('xxlarge') {
+                border: 2px solid #11ADFF;
+                font-size: 22px;
+                padding: 18.5px 21.15px;
+
+                &:hover {
+                    font-size: 20px;
+                    padding: 17.5px 20.5px;
+                }
+
+        }
+
+
         
             @include breakpointMin('medium') {
                 &:hover {
@@ -90,6 +133,21 @@
                     margin-right: 29.57px;
                     transition: 0.5s;
                 }
+
+                @include breakpointMin('xxlarge') {
+      
+                    &:hover {
+                        border: 2px solid $white-text;
+                        margin-top: 1px;
+                        margin-bottom: 1px;
+                        margin-left: 7.2px;
+                        margin-right: 36px;
+                        font-size: 20px;
+                        padding: 17.5px 20.5px;
+                    }
+    
+            }
+    
             }
         
 
@@ -102,6 +160,8 @@
                 margin-bottom: 20px;
             }
         }
+
+
 }
 
     &__right {
@@ -120,7 +180,17 @@
         }
 
         @include breakpoint('medium') {
-            display: none;
+            display: flex;
+            margin-left: 20%;
+            margin-right: 0;
+        }
+
+        
+        @include breakpoint('small-intermediate') {
+            display: flex;
+            align-items: center;
+            margin-left: 0%;
+            margin-right: 0;
         }
 
     }
