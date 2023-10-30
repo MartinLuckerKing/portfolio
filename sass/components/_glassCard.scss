@@ -17,7 +17,7 @@
         margin-right: 10px;
     }
 
-    @include breakpoint('small') {
+    @include breakpoint('xxsmall') {
         max-width: 300px;
         height: 203px;
         margin-left: 10px;

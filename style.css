@@ -137,17 +137,17 @@ table {
 .navBar__link div:last-child {
   margin-right: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .navBar__link div:last-child {
     margin-right: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .navBar__link {
     margin-top: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .navBar__link div a {
     display: none;
   }
@@ -155,7 +155,7 @@ table {
 .navBar__link div {
   margin-top: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .navBar__link div {
     display: block;
     margin-top: 0px;
@@ -251,6 +251,7 @@ table {
 
 .nav {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -1342,7 +1343,7 @@ table {
     margin-right: 10px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 320px) {
   .card {
     max-width: 300px;
     height: 203px;
