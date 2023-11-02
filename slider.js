@@ -43,25 +43,20 @@ function initCarousel(sliderElement) {
   
       return { ...scales, radius: newRadius };
     }
-  
+
+    
     function updateCarousel() {
-      const config = getResponsiveScale();
-      const radius = config.radius;
-  
-      for (let [index, slide] of slides.entries()) {
-        slide.classList.remove('active');
+      const { radius, active, inactive } = getResponsiveScale();
+    
+      slides.forEach((slide, index) => {
+        const isActiveSlide = index === currSlide;
         const angle = theta * (index - currSlide);
         const xPosition = Math.sin(angle) * radius;
-        let scaleValue = config.inactive;
-  
-        slide.style.zIndex = '1';  
-        if (index === currSlide) {
-          scaleValue = config.active;
-          slide.style.zIndex = '2'; 
-          slide.classList.add('active');
-        }
+        const scaleValue = isActiveSlide ? active : inactive;
+        slide.classList.toggle('active', isActiveSlide);
+        slide.style.zIndex = isActiveSlide ? '2' : '1'; 
         slide.style.transform = `translate(-50%, -50%) translateX(${xPosition}px) scale(${scaleValue})`;
-      }
+      });
     }
   
     nextButton.addEventListener('click', () => {

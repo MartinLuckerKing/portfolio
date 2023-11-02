@@ -41,14 +41,14 @@
 
 .borderContainer {
   position: relative;
-  padding-top: 6px; // Pour créer de l'espace pour le .borderTop
+  padding-top: 6px;
 }
 
 
 .border-container {
     width: 150px;
     height: 150px;
-    background-color: red; /* la couleur du carré d'arrière-plan */
+    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,8 +156,6 @@
       linear-gradient(var(--sl)) 0 0/ 13px 13px round;
     -webkit-mask: var(--m);
     -webkit-mask-composite: xor, source-over, source-in, source-over;
-    -moz-mask-composite: xor, source-over, source-in, source-over;
-    -moz-mask: var(--m);
             mask: var(--m);
             mask-composite: exclude, add, intersect, add;
     content: ''

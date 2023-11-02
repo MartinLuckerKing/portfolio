@@ -10,7 +10,7 @@
     <meta property="og:url" content="https://martinduchesne.com/" />
     <meta property="og:title" content="Portfolio - Martin Duchesne" />
     <meta property="og:description" content="All my work so far" />
-    <meta property="og:image" content="./img/meta/presentation.jpg" />
+    <meta property="og:image" content="https://martinduchesne.com/img/meta/presentation.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@martinduchesne" />
     <meta name="twitter:title" content="Portfolio - Martin Duchesne" />
@@ -46,7 +46,7 @@
       </div>
       <div class="navBar__link">
         <div class="burgerMenu">
-          <div class="burgerMenu__button" aria-label="Menu">
+          <div class="burgerMenu__button">
             <div class="menu-btn">
               <span class="bar"></span>
               <span class="bar"></span>
@@ -54,10 +54,10 @@
             </div>
           </div>
         </div>
-        <div><a class="navBar__void" aria-label="home" href="#home">Home</a></div>
-        <div><a class="navBar__void" aria-label="about me" href="#aboutMe">About me</a></div>
-        <div><a class="navBar__void" aria-label="my work" href="#myWork">My Work</a></div>
-        <div><a class="button__contact" aria-label="contact" href="#contact">Contact</a></div>
+        <div><a class="navBar__void" aria-current="home" href="#home">Home</a></div>
+        <div><a class="navBar__void" aria-current="about me" href="#aboutMe">About me</a></div>
+        <div><a class="navBar__void" aria-current="my work" href="#myWork">My Work</a></div>
+        <div><a class="button__contact" aria-current="contact" href="#contact">Contact</a></div>
       </div>
       <div class="banner" role="banner">
         <div class="banner__left">
@@ -65,7 +65,7 @@
           <h3 class="banner__left__presentation"><span class="banner__left__presentation__pronoun">I'm </span><span class="banner__left__presentation--color">Martin.</span></h3>
           <h4 class="banner__left__description">A passionate Front-End Developper</h4>
           <span class="banner__left__link">
-              <a class="banner__left__link" href="#">Download CV</a><a class="button__hireMe" href="#contact">Hire me</a>
+              <a class="banner__left__link" href="#">Download CV</a><a class="button__hireMe" aria-label="Hire me" href="#contact">Hire me</a>
           </span>
         </div>
         <div class="banner__right">
@@ -225,18 +225,18 @@
           <div class="footer__content__left">
             <h2 class="footer__content__left__logo">Martin D.</h2>
             <h3 class="footer__content__left__followMe">Follow Me</h3>
-            <a href="https://www.linkedin.com/in/martin-duchesne-2b6072226/"><i class="fa-brands fa-linkedin footer__content__left__icon"></i></a>
+            <a href="https://www.linkedin.com/in/martin-duchesne-2b6072226/"><i class="fa-brands fa-linkedin footer__content__left__icon"><span class="sr-only">Linkedin Link</span></i></a>
           </div>
             <div class="footer__content__menu">
             <div>
-              <h3><a aria-label="home" href="#contact">Home</a></h3>
-              <p><a aria-label="contact" href="#contact">Hire Me</a></p>
-              <p><a aria-label="about me" href="#aboutMe">About Me</a></p>
-              <p><a aria-label="my work" href="#myWork">My Work</a></p>
+              <h3><a aria-label="home" href="#home">Home</a></h3>
+              <p><a href="#contact" aria-label="Hire Me">Hire Me</a></p>
+              <p><a href="#aboutMe" aria-label="About Me">About Me</a></p>
+              <p><a href="#myWork" aria-label="My Work">My Work</a></p>
             </div>
             <div class="footer__content__menu__contact">
-              <h3><a aria-label="home" href="#contact">Contact</a></h3>
-              <p><a aria-label="Email Martin Duchesne" href="mailto:martin.duchesne27@gmail.com">martin.duchesne27@gmail.com</a></p>
+              <h3><a href="#contact" aria-label="Contact">Contact</a></h3>
+              <p><a href="mailto:martin.duchesne27@gmail.com" aria-label="martin.duchesne27@gmail.com">martin.duchesne27@gmail.com</a></p>
               <p><a aria-label="Profil Linkedin Martin Duchesne" href="https://www.linkedin.com/in/martin-duchesne-2b6072226/">Linkedin</a></p>
             </div>  
           </div>

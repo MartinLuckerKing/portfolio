@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const nextButton = document.createElement('div');
         nextButton.className = 'next';
-        const triangleBlanc = document.createElement('span');
-        triangleBlanc.className = 'triangle-blanc';
-        nextButton.appendChild(triangleBlanc);
+        const whiteTriangle = document.createElement('span');
+        whiteTriangle.className = 'whiteTriangle';
+        nextButton.appendChild(whiteTriangle);
         sliderElement.appendChild(nextButton);
 
         project.slides.forEach((slide, index) => {

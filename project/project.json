@@ -20,8 +20,8 @@
       "visitWebsiteButtonText": "Visit Website",
       "visitWebsiteLink": "https://martinluckerking.github.io/ohmyfood/",
       "slides": [
-        {"id": "slide1", "imgSrc": "./img/ohMyFood/ohMyFood1.webp", "imgAlt": "Image 1"},
-        {"id": "slide2", "imgSrc": "./img/ohMyFood/ohMyFood2.webp", "imgAlt": "Image 2"},
+        {"id": "slide1", "imgSrc": "./img/ohMyFood/ohMyFood2.webp", "imgAlt": "Image 1"},
+        {"id": "slide2", "imgSrc": "./img/ohMyFood/ohMyFood1.webp", "imgAlt": "Image 2"},
         {"id": "slide3", "imgSrc": "./img/ohMyFood/ohMyFood3.webp", "imgAlt": "Image 3"}
       ]
     },
