@@ -53,8 +53,17 @@ function initCarousel(sliderElement) {
         const angle = theta * (index - currSlide);
         const xPosition = Math.sin(angle) * radius;
         const scaleValue = isActiveSlide ? active : inactive;
+    
         slide.classList.toggle('active', isActiveSlide);
-        slide.style.zIndex = isActiveSlide ? '2' : '1'; 
+
+        if (isActiveSlide) {
+          slide.style.zIndex = 3; 
+        } else if ((currSlide - 1) % totalSlides === index) {
+          slide.style.zIndex = 2;
+        } else {
+          slide.style.zIndex = 0;
+        }
+    
         slide.style.transform = `translate(-50%, -50%) translateX(${xPosition}px) scale(${scaleValue})`;
       });
     }

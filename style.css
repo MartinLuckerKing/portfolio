@@ -1554,7 +1554,7 @@ table {
   bottom: -5px;
   left: -5px;
   padding: 3px;
-  background: linear-gradient(45deg, #11ADFF, #11ADFF, white, white);
+  background: linear-gradient(10deg, #11ADFF, #11ADFF, white, white);
   --sl: red 26%, transparent 0%, transparent 80%, red 0%;
   --m:
     linear-gradient(red, red) content-box,

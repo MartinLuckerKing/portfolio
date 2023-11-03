@@ -19,23 +19,24 @@
     <meta name="description" content="Explore my portfolio as a web developer with a strong focus on Front-End development. Discover my projects and skills.">
     <script defer src="./schemaPerson.json" type="application/ld+json"></script>
     <script defer src="https://kit.fontawesome.com/7dedfb4a80.js" crossorigin="anonymous"></script>
-    <script defer src="./burger.js" crossorigin="anonymous"></script>
+    <script defer src="./js/burger.js" crossorigin="anonymous"></script>
+    <script defer src="./js/vannillaTilt.js"></script>
     <script defer src="./project/project.js" crossorigin="anonymous"></script>
-    <script defer src="./slider.js"></script>
+    <script defer src="./js/slider.js"></script>
   </head>
   <body class="background">
     <section id="home">
       <div class="navBar">
         <div class="header">
           <div class="header__container">
-          <div class="header__container__logo" aria-label="Logo">Martin D.
+          <div class="header__container__logo">Martin D.
             <h2>FRONT
                DEVELOPPER</h2> 
           </div>
         </div>
       </div>
       <div class="header__nav">
-        <nav class="nav" role="navigation">
+        <nav class="nav">
           <ul class="nav__list">
             <li class="nav__list_item"><a class="nav__link" aria-label="home" href="#home">Home</a></li>
             <li class="nav__list_item"><a class="nav__link" aria-label="about me" href="#aboutMe">About me</a></li>
@@ -54,10 +55,10 @@
             </div>
           </div>
         </div>
-        <div><a class="navBar__void" aria-current="home" href="#home">Home</a></div>
-        <div><a class="navBar__void" aria-current="about me" href="#aboutMe">About me</a></div>
-        <div><a class="navBar__void" aria-current="my work" href="#myWork">My Work</a></div>
-        <div><a class="button__contact" aria-current="contact" href="#contact">Contact</a></div>
+        <div><a class="navBar__void" aria-label="home" href="#home">Home</a></div>
+        <div><a class="navBar__void" aria-label="about me" href="#aboutMe">About me</a></div>
+        <div><a class="navBar__void" aria-label="my work" href="#myWork">My Work</a></div>
+        <div><a class="button__contact" aria-label="contact" href="#contact">Contact</a></div>
       </div>
       <div class="banner" role="banner">
         <div class="banner__left">
@@ -69,7 +70,7 @@
           </span>
         </div>
         <div class="banner__right">
-          <div class="card" aria-label="Profile Card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+          <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
             <div class="card__content">
               <img class="card__content__round" src="./img/profile/openclass.JPG" alt="profile picture">
               <div>
@@ -220,7 +221,7 @@
           </div>
         </section>
       </div>
-      <footer class="footer" role="contentinfo">
+      <footer class="footer">
         <div class="footer__content">
           <div class="footer__content__left">
             <h2 class="footer__content__left__logo">Martin D.</h2>
@@ -242,6 +243,6 @@
           </div>
         </div>
       </footer>
-      <script src="./vannillaTilt.js"></script>
+      
   </body>
 </html>

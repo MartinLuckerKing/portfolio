@@ -143,11 +143,10 @@
   }
   
   .borderProject__01:before {
-    
     position: absolute;
     top: -$bw; right: -$bw; bottom: -$bw; left: -$bw;
     padding: 3px;
-    background: linear-gradient(45deg, $primary-color, $primary-color, white, white);
+    background: linear-gradient(10deg, $primary-color, $primary-color, white, white);
     --sl: red 26%, transparent 0%, transparent 80%, red 0%;
     --m: 
       linear-gradient(red, red) content-box, 
@@ -158,6 +157,6 @@
     -webkit-mask-composite: xor, source-over, source-in, source-over;
             mask: var(--m);
             mask-composite: exclude, add, intersect, add;
-    content: ''
+    content: '';
   }
 } 
