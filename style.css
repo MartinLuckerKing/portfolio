@@ -1249,6 +1249,7 @@ table {
   color: #DDDDDD;
   letter-spacing: 1px;
   font-size: 21px;
+  max-width: 547px;
   font-weight: 600;
   background-color: #11ADFF;
   padding: 18px 30px;
