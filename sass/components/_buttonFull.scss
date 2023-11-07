@@ -61,19 +61,6 @@
       
       
     }
-    @include breakpointMin('xxlarge') {
-      @include buttonFull(20.5px, 56.17px);
-      font-size: 22px;
-
-      &:hover {
-        transition: 0.5s;
-        font-size: 20px;
-        @include buttonFull(18.5px, 50.17px);
-
-      }
-      
-      
-    }
 
     @include breakpoint('small') {
       min-width: 280px;
@@ -130,6 +117,7 @@
     color: $white-text;
     letter-spacing: 1px;
     font-size: 21px;
+    max-width: 547px;
     font-weight: 600;
     @include buttonFull(18px, 30px);
     transition: 0.5s;

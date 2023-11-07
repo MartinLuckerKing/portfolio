@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  fetch('./project/project.json')
+  fetch('./js/project/project.json')
     .then(response => response.json())
     .then(data => {
       const projectsContainer = document.querySelector('.borderProject');

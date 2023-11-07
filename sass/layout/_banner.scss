@@ -30,12 +30,6 @@
         color: #D9D9D9;
         font-weight: 400;
 
-        
-        @include breakpointMin('xxlarge') {
-            font-size: 60px;
-
-        }
-
         }
 
         &__presentation {
@@ -46,43 +40,21 @@
             &--color {
                 color: #11ADFF;
             } 
-                    
-        @include breakpointMin('xxlarge') {
-            font-size: 80px;
-
-        }
 
             &__pronoun {
                 font-size: 50px;
                 font-weight: 400;
-
-                        
-            @include breakpointMin('xxlarge') {
-                font-size: 70px;
-
-        }
             }
         }
 
         &__description {
             font-size: 18px;
             color: #D9D9D9;
-            font-weight: 500;
-
-            @include breakpointMin('xxlarge') {
-                font-size: 28px;
-
-        }
-            
+            font-weight: 500;    
         }
 
         &__link {
             margin-top: 30px;
-
-            @include breakpointMin('xxlarge') {
-                font-size: 20px;
-
-        }
 
             @include breakpoint('small') {
                 display: flex;
@@ -108,18 +80,6 @@
             color: #11ADFF;
             transition: 0.5s;
 
-            @include breakpointMin('xxlarge') {
-                border: 2px solid #11ADFF;
-                font-size: 22px;
-                padding: 18.5px 21.15px;
-
-                &:hover {
-                    font-size: 20px;
-                    padding: 17.5px 20.5px;
-                }
-
-        }
-
 
         
             @include breakpointMin('medium') {
@@ -133,20 +93,6 @@
                     margin-right: 29.57px;
                     transition: 0.5s;
                 }
-
-                @include breakpointMin('xxlarge') {
-      
-                    &:hover {
-                        border: 2px solid $white-text;
-                        margin-top: 1px;
-                        margin-bottom: 1px;
-                        margin-left: 7.2px;
-                        margin-right: 36px;
-                        font-size: 20px;
-                        padding: 17.5px 20.5px;
-                    }
-    
-            }
     
             }
         
